@@ -8,15 +8,24 @@
     <link rel="stylesheet" href="app.css" />
 
     <!--scripts-->
-    <script src="list.js"></script>
+    <script type="text/javascript" src="list.js"></script>
   </head>
 
-  <body onload="show()">
+  <body>
     <h1>Lernplan</h1>
-    <input id="inputFach" placeholder="Fach" type="text" />
-    <input id="inputTodo" placeholder="Todo" type="text" />
-    <input id="inputTage" placeholder="Tage" type="text" />
-    <button id="plusButton">+</button>
+    <nav>
+      <ul>
+        <li>Alle Einträge</li>
+        <li>Kalender</li>
+      </ul>
+    </nav>
+    <div id="addEntry" class="hide">
+      <input id="inputFach" placeholder="Fach" type="text" />
+      <input id="inputTodo" placeholder="Todo" type="text" />
+      <input id="inputTage" placeholder="Tage" type="text" />
+      <button id="addEntry" class="button">+</button>
+    </div>
+    <button id="goToAddEntry" class="button">+</button>
     <ul id="list"></ul>
   </body>
 </html>
