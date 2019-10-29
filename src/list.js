@@ -12,10 +12,11 @@ window.onload = function show() {
   for (var i = 0; i < classname.length; i++) {
     classname[i].addEventListener("click", remove);
   }
-  var goToAddEntry = document.getElementById("goToAddEntry");
-  goToAddEntry.addEventListener("click", display);
+  var goToAddEntry = document.getElementById("addEntryNav");
+  goToAddEntry.addEventListener("click", displayAddEntry);
 
-  var addEntry = document.getElementsByClassName("addEntry");
+  var goToList = document.getElementById("listNav");
+  goToList.addEventListener("click", displayList);
 };
 
 function load() {
@@ -51,7 +52,6 @@ function add() {
     todo: newTodo,
     tageBisFällig: newTage
   });
-  hide();
   load();
 }
 
@@ -64,10 +64,12 @@ function remove() {
 
 function edit() {}
 
-function display() {
+function displayAddEntry() {
   addEntry.className = "show";
+  list.className = "hide";
 }
 
-function hide() {
+function displayList() {
   addEntry.className = "hide";
+  list.className = "show";
 }

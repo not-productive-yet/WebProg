@@ -30,7 +30,7 @@ nav ul {
   margin: 0;
   padding: 0;
   margin-bottom: -3px;
-  display: flex;
+  display: inline;
 }
 
 nav li {
