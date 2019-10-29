@@ -1,6 +1,7 @@
 var elements = [
   { fach: "webprog", todo: "app erstellen", tageBisFällig: 5 },
-  { fach: "mobile", todo: "testen", tageBisFällig: 6 }
+  { fach: "mobile", todo: "testen", tageBisFällig: 6 },
+  { fach: "test1", todo: "testen", tageBisFällig: 7 }
 ];
 
 window.onload = function show() {
