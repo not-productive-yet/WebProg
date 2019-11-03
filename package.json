@@ -1,7 +1,7 @@
 {
-  "name": "webprog",
+  "name": "neuerversuch",
   "version": "1.0.0",
-  "description": "DHBW Webprogrammierung",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "clean": "node scripts/clean.js",
@@ -9,17 +9,10 @@
     "watch": "npm run clean && parcel watch src/*.html --public-url . --detailed-report --experimental-scope-hoisting",
     "start": "parcel src/index.html --open"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/not-productive-yet/WebProg.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/not-productive-yet/WebProg/issues"
-  },
-  "homepage": "https://github.com/not-productive-yet/WebProg#readme",
   "devDependencies": {
+    "navigo": "^7.1.2",
     "parcel-bundler": "^1.12.4",
     "shelljs": "^0.8.3"
   }

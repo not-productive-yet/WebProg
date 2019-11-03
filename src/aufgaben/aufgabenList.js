@@ -4,22 +4,7 @@ var elements = [
   { fach: "test1", todo: "testen", tageBisFällig: 7 }
 ];
 
-window.onload = function show() {
-  load();
-  var addEntry = document.getElementById("addEntry");
-  addEntry.addEventListener("click", add);
-  var classname = document.getElementsByClassName("remove");
-  for (var i = 0; i < classname.length; i++) {
-    classname[i].addEventListener("click", remove);
-  }
-  var goToAddEntry = document.getElementById("addEntryNav");
-  goToAddEntry.addEventListener("click", displayAddEntry);
-
-  var goToList = document.getElementById("listNav");
-  goToList.addEventListener("click", displayList);
-};
-
-function load() {
+export function loadAufgaben() {
   var html = "<ul class='entries'>";
   for (var i = 0; i < elements.length; i++) {
     html +=
@@ -37,13 +22,14 @@ function load() {
       i +
       '">edit</button></li>';
   }
+
   html += "</ul>";
 
-  document.getElementById("list").innerHTML = html;
+  document.getElementById("aufgabenList").innerHTML = html;
 }
 
-function add() {
-  //muss wahrsch async sein damit er auf user input wartet
+export function addAufgabe() {
+  console.log("imadd");
   var newFach = document.getElementById("inputFach").value;
   var newTodo = document.getElementById("inputTodo").value;
   var newTage = document.getElementById("inputTage").value;
@@ -52,24 +38,13 @@ function add() {
     todo: newTodo,
     tageBisFällig: newTage
   });
-  load();
+  loadAufgaben();
 }
 
 function remove() {
+  //TODO: einbinden
   console.log("remove aufgerufen");
   var id = this.getAttribute("id");
   elements.splice(id, 1);
   load();
-}
-
-function edit() {}
-
-function displayAddEntry() {
-  addEntry.className = "show";
-  list.className = "hide";
-}
-
-function displayList() {
-  addEntry.className = "hide";
-  list.className = "show";
 }

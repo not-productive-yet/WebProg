@@ -1,0 +1,56 @@
+body {
+  font-family: "Bahnschrift";
+  font-size: 12pt;
+  font-style: italic;
+  background-image: url("background.jpg");
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 30pt;
+  background-color: #339d83;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.entries {
+  list-style: none;
+}
+
+.entries li {
+  margin: 5pt;
+  background-color: grey;
+  width: 200pt;
+  height: 50pt;
+}
+
+nav {
+  list-style: none;
+  background-color: #339d83;
+  color: white;
+  border: 0px solid #36554d;
+  border-bottom-width: 3px;
+  display: block;
+  width: 200px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: -3px;
+}
+
+nav li {
+  padding: 1em;
+  margin: 0;
+}
+
+nav li:hover {
+  background-color: #d4ffeb;
+  border: 0px solid #b3fac8;
+  cursor: pointer;
+  color: black;
+}

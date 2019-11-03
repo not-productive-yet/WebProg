@@ -1,31 +1,76 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mein Lernplan</title>
 
-    <!--stylesheets-->
-    <link rel="stylesheet" href="app.css" />
-
-    <!--scripts-->
-    <script type="text/javascript" src="list.js"></script>
+    <script src="index.js"></script>
   </head>
-
   <body>
-    <h1>Lernplan</h1>
-    <nav>
-      <ul>
-        <li id="listNav">Alle Einträge</li>
-        <li>Kalender</li>
-        <li id="addEntryNav">Neuer Eintrag</li>
-      </ul>
-    </nav>
-    <div id="addEntry" class="hide">
-      <input id="inputFach" placeholder="Fach" type="text" />
-      <input id="inputTodo" placeholder="Todo" type="text" />
-      <input id="inputTage" placeholder="Tage" type="text" />
-      <button id="addEntry" class="button">+</button>
-    </div>
-    <ul id="list" class="show"></ul>
+    <section id="app">
+      <header>
+        <h1>Mein Lernplan</h1>
+        <nav>
+          <ul>
+            <li id="listNav" href="/fächer" data-navigo>
+              Fächer
+            </li>
+            <li id="addEntryNav" href="/aufgaben" data-navigo>Aufgaben</li>
+          </ul>
+        </nav>
+      </header>
+      <main></main>
+    </section>
+
+    <section id="fächer" class="hidden">
+      <header></header>
+
+      <main>
+        <h3>Meine Fächer</h3>
+        <ul id="fächerList"></ul>
+        <button id="addAufgabe" href="/neuesFach" data-navigo>+</button>
+      </main>
+    </section>
+
+    <section id="aufgaben" class="hidden">
+      <header></header>
+
+      <main>
+        <h3>Meine Aufgaben</h3>
+        <ul id="aufgabenList"></ul>
+        <button id="addAufgabe" href="/neueAufgabe" data-navigo>+</button>
+      </main>
+    </section>
+
+    <section id="neueAufgabe" class="hidden">
+      <header></header>
+
+      <main>
+        <h3>Neue Aufgabe:</h3>
+        <input id="inputFach" placeholder="Fach" type="text" />
+        <input id="inputTodo" placeholder="Todo" type="text" />
+        <input id="inputTage" placeholder="Tage" type="text" />
+        <button id="backToAufgaben" class="button" href="/aufgaben" data-navigo>
+          zurück
+        </button>
+        <button id="saveAufgabe">speichern</button>
+      </main>
+    </section>
+
+    <section id="neuesFach" class="hidden">
+      <header></header>
+
+      <main>
+        <h3>Neues Fach:</h3>
+        <input id="inputFach" placeholder="Fach" type="text" />
+        <input id="inputDozent" placeholder="Dozent" type="text" />
+        <input id="inputNotiz" placeholder="Notiz" type="text" />
+        <input id="inputKlausur" placeholder="Klausur" type="text" />
+        <button id="backToFächer" class="button" href="/fächer" data-navigo>
+          zurück
+        </button>
+        <button id="saveFach">speichern</button>
+      </main>
+    </section>
   </body>
 </html>
