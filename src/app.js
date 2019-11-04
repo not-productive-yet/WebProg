@@ -7,7 +7,7 @@ import Fächer from "./fächer/fächer.js";
 import Aufgaben from "./aufgaben/aufgaben.js";
 import NeueAufgabe from "./aufgaben/neueAufgabe.js";
 import NeuesFach from "./fächer/neuesFach.js";
-import Kalender from "./kalender/kalender.js";
+import Designs from "./designs/designs.js";
 
 export default class App {
   constructor() {
@@ -24,7 +24,7 @@ export default class App {
       "/fächer/": () => this.showFächer(),
       "/neueAufgabe": () => this.showNeueAufgabe(),
       "/neuesFach": () => this.showNeuesFach(),
-      "/kalender": () => this.showKalender()
+      "/designs": () => this.showDesigns()
     });
 
     this._router.hooks({
@@ -66,8 +66,8 @@ export default class App {
     this._switchVisibleView(view);
   }
 
-  showKalender() {
-    let view = new Kalender(this);
+  showDesigns() {
+    let view = new Designs(this);
     this._switchVisibleView(view);
   }
 

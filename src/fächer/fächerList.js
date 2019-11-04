@@ -17,12 +17,7 @@ export function loadFächer() {
       " " +
       elements[i].klausur +
       " " +
-      '<button class="remove" id="' +
-      i +
-      '">x</button></li>' +
-      '<button class="edit" id="' +
-      i +
-      '">edit</button></li>';
+      "</li>";
   }
 
   html += "</ul>";

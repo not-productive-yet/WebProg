@@ -1,7 +1,7 @@
 body {
   font-family: "Montserrat";
   font-size: 12pt;
-  background-image: url("./images/background.jpg");
+  background-image: url("./images/journey.jpg");
 }
 
 h1 {
@@ -11,6 +11,7 @@ h1 {
   color: white;
   text-transform: uppercase;
   font-size: bold;
+  text-align: center;
 }
 
 h3 {
@@ -36,7 +37,7 @@ h3 {
 .entries li {
   margin: 5pt;
   width: 290pt;
-  height: 100pt;
+  height: 160pt;
   display: inline-grid;
 }
 
@@ -72,4 +73,10 @@ button {
   border: none;
   color: white;
   background-color: #374a45;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
 }

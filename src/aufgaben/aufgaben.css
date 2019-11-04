@@ -3,6 +3,7 @@
   color: white;
   width: 1000pt;
   height: 300pt;
+  position: relative;
 }
 
 .neueAufgabe main {
@@ -13,7 +14,7 @@
 }
 #fach {
   font-size: 15pt;
-  margin-top: 40pt;
+  margin-top: 20pt;
   text-transform: uppercase;
   height: 30px;
   width: 300px;
@@ -21,6 +22,12 @@
 #aufgabenBlock {
   border-top-color: #374a45;
   border-top-style: solid;
+}
+#aufgabenList li:hover {
+  border-style: solid;
+  border-color: #d4ffeb;
+  cursor: pointer;
+  border-width: 2px;
 }
 #todo {
   margin-top: 10pt;
@@ -37,7 +44,6 @@
 }
 
 #aufgabenList li {
-  border-bottom-color: black;
   border-bottom-style: ridge;
   list-style-type: disc;
   list-style: url("../images/book-icon-white.png"); /*funzt nich*/

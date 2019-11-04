@@ -1,13 +1,13 @@
 "use strict";
 
-import stylesheet from "./kalender.css";
+import stylesheet from "./designs.css";
 
-export default class Kalender {
+export default class Designs {
   constructor(app) {
     this._app = app;
   }
   onShow() {
-    let section = document.querySelector("#kalender").cloneNode(true);
+    let section = document.querySelector("#designs").cloneNode(true);
 
     return {
       className: "kalender",
@@ -20,6 +20,6 @@ export default class Kalender {
   }
 
   get title() {
-    return "Kalender";
+    return "Designs";
   }
 }

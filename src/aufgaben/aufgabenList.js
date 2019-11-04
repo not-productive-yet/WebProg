@@ -12,6 +12,9 @@ export function loadAufgaben() {
       "<div id='fach'>" +
       elements[i].fach +
       "</div>" +
+      '<button class="remove" id="' +
+      i +
+      '">x</button>' +
       " " +
       "<div id='aufgabenBlock'>" +
       "<div id='todo'>" +
@@ -22,13 +25,7 @@ export function loadAufgaben() {
       elements[i].tageBisFällig +
       "</div>" +
       " tage bis fällig" +
-      "<div id='aufgabenListButtons'>" +
-      '<button class="remove" id="' +
-      i +
-      '">x</button>' +
-      '<button class="edit" id="' +
-      i +
-      '">edit</button></div></div></li>';
+      "</div></li>";
   }
 
   html += "</ul>";
