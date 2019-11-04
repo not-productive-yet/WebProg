@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     <title>Mein Lernplan</title>
 
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Montserrat|Titillium+Web&display=swap");
+    </style>
     <script src="index.js"></script>
   </head>
   <body>
@@ -12,10 +15,9 @@
         <h1>Mein Lernplan</h1>
         <nav>
           <ul>
-            <li id="listNav" href="/fächer" data-navigo>
-              Fächer
-            </li>
+            <li id="listNav" href="/fächer" data-navigo>Fächer</li>
             <li id="addEntryNav" href="/aufgaben" data-navigo>Aufgaben</li>
+            <li id="calenderNav" href="/kalender" data-navigo>Kalender</li>
           </ul>
         </nav>
       </header>
@@ -29,6 +31,7 @@
         <h3>Meine Fächer</h3>
         <ul id="fächerList"></ul>
         <button id="addAufgabe" href="/neuesFach" data-navigo>+</button>
+        <a>Fach hinzufügen</a>
       </main>
     </section>
 
@@ -39,6 +42,7 @@
         <h3>Meine Aufgaben</h3>
         <ul id="aufgabenList"></ul>
         <button id="addAufgabe" href="/neueAufgabe" data-navigo>+</button>
+        <a>Aufgabe hinzufügen</a>
       </main>
     </section>
 
@@ -70,6 +74,15 @@
           zurück
         </button>
         <button id="saveFach">speichern</button>
+      </main>
+    </section>
+
+    <section id="kalender" class="hidden">
+      <header></header>
+
+      <main>
+        <h3>Mein Kalender</h3>
+        <p>hier könnte ihr kalender stehen</p>
       </main>
     </section>
   </body>

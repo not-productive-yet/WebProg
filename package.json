@@ -1,7 +1,7 @@
 {
-  "name": "neuerversuch",
+  "name": "Lernplan",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lernplan mit Todos und Fächer",
   "main": "index.js",
   "scripts": {
     "clean": "node scripts/clean.js",
@@ -9,7 +9,7 @@
     "watch": "npm run clean && parcel watch src/*.html --public-url . --detailed-report --experimental-scope-hoisting",
     "start": "parcel src/index.html --open"
   },
-  "author": "",
+  "author": "Lisa Trovato-Monastra, René Hummel, Jannik Steck",
   "license": "ISC",
   "devDependencies": {
     "navigo": "^7.1.2",

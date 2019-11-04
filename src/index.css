@@ -1,35 +1,48 @@
 body {
-  font-family: "Bahnschrift";
+  font-family: "Montserrat";
   font-size: 12pt;
-  font-style: italic;
-  background-image: url("background.jpg");
+  background-image: url("./images/background.jpg");
 }
 
 h1 {
-  font-weight: bold;
-  font-size: 30pt;
-  background-color: #339d83;
+  font-family: "Titillium Web";
+  font-size: 27pt;
+  background-color: #608078;
   color: white;
+  text-transform: uppercase;
+  font-size: bold;
+}
+
+h3 {
+  font-family: "Titillium Web";
+  font-size: 20pt;
+  text-transform: uppercase;
 }
 
 .hidden {
   display: none;
 }
 
-.entries {
-  list-style: none;
+.remove {
+  margin: 13px;
+  display: inline;
+}
+
+.edit {
+  margin: 13px;
+  display: inline;
 }
 
 .entries li {
   margin: 5pt;
-  background-color: grey;
-  width: 200pt;
-  height: 50pt;
+  width: 290pt;
+  height: 100pt;
+  display: inline-grid;
 }
 
 nav {
   list-style: none;
-  background-color: #339d83;
+  background-color: #608078;
   color: white;
   border: 0px solid #36554d;
   border-bottom-width: 3px;
@@ -53,4 +66,10 @@ nav li:hover {
   border: 0px solid #b3fac8;
   cursor: pointer;
   color: black;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: #374a45;
 }

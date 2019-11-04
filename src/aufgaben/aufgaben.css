@@ -1,9 +1,54 @@
 .aufgaben main {
-  background-color: #339d83;
+  background-color: #608078;
   color: white;
+  width: 1000pt;
+  height: 300pt;
 }
 
 .neueAufgabe main {
-  background-color: #339d83;
+  background-color: #608078;
   color: white;
+  width: 500pt;
+  height: 200pt;
+}
+#fach {
+  font-size: 15pt;
+  margin-top: 40pt;
+  text-transform: uppercase;
+  height: 30px;
+  width: 300px;
+}
+#aufgabenBlock {
+  border-top-color: #374a45;
+  border-top-style: solid;
+}
+#todo {
+  margin-top: 10pt;
+  font-size: 14pt;
+  padding: 5px;
+  margin-bottom: 10pt;
+}
+
+#tageBisFällig {
+  display: inline;
+  padding: 5px;
+  font-style: italic;
+  font-size: 15pt;
+}
+
+#aufgabenList li {
+  border-bottom-color: black;
+  border-bottom-style: ridge;
+  list-style-type: disc;
+  list-style: url("../images/book-icon-white.png"); /*funzt nich*/
+}
+
+#aufgabenListButtons {
+  display: inline-block;
+  margin-left: 260px;
+}
+
+#addAufgabe {
+  margin-top: 100pt;
+  margin-left: 70pt;
 }

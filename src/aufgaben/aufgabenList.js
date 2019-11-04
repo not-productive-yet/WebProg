@@ -1,26 +1,34 @@
 var elements = [
-  { fach: "webprog", todo: "app erstellen", tageBisFällig: 5 },
-  { fach: "mobile", todo: "testen", tageBisFällig: 6 },
-  { fach: "test1", todo: "testen", tageBisFällig: 7 }
+  { fach: "webprogrammierung", todo: "app erstellen", tageBisFällig: 5 },
+  { fach: "mobile applikationen", todo: "testen", tageBisFällig: 6 },
+  { fach: "informatik", todo: "testen123", tageBisFällig: 7 }
 ];
 
 export function loadAufgaben() {
-  var html = "<ul class='entries'>";
+  var html = "<ul class='entries' id='aufgabenEntries'>";
   for (var i = 0; i < elements.length; i++) {
     html +=
       "<li>" +
+      "<div id='fach'>" +
       elements[i].fach +
+      "</div>" +
       " " +
+      "<div id='aufgabenBlock'>" +
+      "<div id='todo'>" +
       elements[i].todo +
+      "</div>" +
       " " +
+      "<div id='tageBisFällig'>" +
       elements[i].tageBisFällig +
-      " " +
+      "</div>" +
+      " tage bis fällig" +
+      "<div id='aufgabenListButtons'>" +
       '<button class="remove" id="' +
       i +
-      '">x</button></li>' +
+      '">x</button>' +
       '<button class="edit" id="' +
       i +
-      '">edit</button></li>';
+      '">edit</button></div></div></li>';
   }
 
   html += "</ul>";

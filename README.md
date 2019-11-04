@@ -1,9 +1,10 @@
 # WebProg
-DHBW Webprogrammierung
 
-Wir erstellen einen Lernplan als Browser-App.
+Eine Lernplan Browser-App.
 
 - 3 Seiten
-    . Anlegen der Lern-Session
-    . Anzeige aller Lern-Sessions
-    . Bearbeiten der Lern-Session
+  . Eine Todo Liste
+  Todos können angeschaut, hinzugefügt und entfernt werden
+  . Eine Fächer Liste
+  Fächer können angeschaut, hinzugefügt und entfernt werden
+  . Kalender (?)
