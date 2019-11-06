@@ -12,6 +12,7 @@ h1 {
   text-transform: uppercase;
   font-size: bold;
   text-align: center;
+  border-radius: 0.25em;
 }
 
 h3 {
@@ -41,22 +42,44 @@ nav {
   width: 200px;
 }
 
-nav ul {
+nav > ul {
   margin: 0;
   padding: 0;
-  margin-bottom: -3px;
+  border-radius: 0.5em;
+}
+
+nav ul {
+  background-color: #608078;
+  color: white;
+  font-weight: bold;
+  display: block;
+  width: 200px;
+  float: left;
+  text-align: center;
 }
 
 nav li {
-  padding: 1em;
-  margin: 0;
+  list-style: none;
+  position: relative;
+  padding: 0;
+  font-size: 20pt;
+  padding: 0.5em;
 }
 
 nav li:hover {
   background-color: #d4ffeb;
-  border: 0px solid #b3fac8;
   cursor: pointer;
   color: black;
+  border-radius: 0.25em;
+}
+
+main {
+  display: block;
+  margin-left: 14.5em;
+  text-align: center;
+  color: white;
+  background-color: #608078;
+  border-radius: 0.5em;
 }
 
 button {
@@ -69,4 +92,25 @@ button {
 button:hover {
   background-color: white;
   color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.remove {
+  margin: 13px;
+  display: inline;
+}
+
+.edit {
+  margin: 13px;
+  display: inline;
+}
+
+.entries li {
+  margin: 5pt;
+  width: 290pt;
+  height: 160pt;
+  display: inline-grid;
 }
