@@ -1,7 +1,8 @@
 var elements = [
   { fach: "webprogrammierung", todo: "app erstellen", tageBisFällig: 5 },
   { fach: "mobile applikationen", todo: "testen", tageBisFällig: 6 },
-  { fach: "informatik", todo: "testen123", tageBisFällig: 7 }
+  { fach: "informatik", todo: "testen123", tageBisFällig: 7 },
+  { fach: "mathe", todo: "algebra", tageBisFällig: 89 }
 ];
 
 export function loadAufgaben() {

@@ -1,16 +1,11 @@
 .aufgaben main {
   background-color: #608078;
   color: white;
-  width: 1000pt;
-  height: 300pt;
-  position: relative;
 }
 
 .neueAufgabe main {
   background-color: #608078;
   color: white;
-  width: 500pt;
-  height: 200pt;
 }
 #fach {
   font-size: 15pt;

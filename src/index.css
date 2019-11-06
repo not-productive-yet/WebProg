@@ -12,12 +12,65 @@ h1 {
   text-transform: uppercase;
   font-size: bold;
   text-align: center;
+  border-radius: 0.25em;
 }
 
 h3 {
   font-family: "Titillium Web";
   font-size: 20pt;
   text-transform: uppercase;
+}
+
+nav > ul{
+    margin: 0;
+	padding: 0;
+    border-radius: 0.5em;
+}
+
+nav ul{
+    background-color: #608078;
+    color: white;
+    font-weight:bold;
+    display:block;
+    width: 200px;
+    float: left;
+    text-align:center;
+}
+
+nav li{
+    list-style: none;
+	position: relative;
+	padding: 0;
+    font-size: 20pt;
+    padding: 0.5em;
+}
+
+nav li:hover {
+  background-color: #d4ffeb;
+  cursor: pointer;
+  color: black;
+  border-radius: 0.25em;
+}
+
+main {
+    display:block;
+    margin-left: 14.5em;
+    text-align: center;
+    color: white;
+    background-color: #608078;
+    border-radius: 0.5em;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: #374a45;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
 }
 
 .hidden {
@@ -39,44 +92,4 @@ h3 {
   width: 290pt;
   height: 160pt;
   display: inline-grid;
-}
-
-nav {
-  list-style: none;
-  background-color: #608078;
-  color: white;
-  border: 0px solid #36554d;
-  border-bottom-width: 3px;
-  display: block;
-  width: 200px;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  margin-bottom: -3px;
-}
-
-nav li {
-  padding: 1em;
-  margin: 0;
-}
-
-nav li:hover {
-  background-color: #d4ffeb;
-  border: 0px solid #b3fac8;
-  cursor: pointer;
-  color: black;
-}
-
-button {
-  border: none;
-  color: white;
-  background-color: #374a45;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: white;
-  color: black;
 }

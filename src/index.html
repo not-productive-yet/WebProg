@@ -9,24 +9,26 @@
     </style>
     <script src="index.js"></script>
   </head>
+
   <body>
     <section id="app">
       <header>
-        <h1>Mein Lernplan</h1>
-        <nav>
-          <ul>
+        <h1>Mein persönlicher Lernplan</h1>
+      </header>
+      <nav>
+        <ul>
             <li id="addEntryNav" href="/aufgaben" data-navigo>Aufgaben</li>
             <li id="listNav" href="/fächer" data-navigo>Fächer</li>
             <li id="calenderNav" href="/designs" data-navigo>Designs</li>
-          </ul>
-        </nav>
-      </header>
-      <main></main>
-    </section>
+        </ul>
+    </nav>
+
+    <main>
+    </main>
+</section>
 
     <section id="fächer" class="hidden">
       <header></header>
-
       <main>
         <h3>Meine Fächer</h3>
         <ul id="fächerList"></ul>
@@ -37,7 +39,6 @@
 
     <section id="aufgaben" class="hidden">
       <header></header>
-
       <main>
         <h3>Meine Aufgaben</h3>
         <ul id="aufgabenList"></ul>
@@ -48,43 +49,37 @@
 
     <section id="neueAufgabe" class="hidden">
       <header></header>
-
       <main>
         <h3>Neue Aufgabe:</h3>
         <input id="inputFach" placeholder="Fach" type="text" />
         <input id="inputTodo" placeholder="Todo" type="text" />
         <input id="inputTage" placeholder="Tage" type="text" />
-        <button id="backToAufgaben" class="button" href="/aufgaben" data-navigo>
-          zurück
-        </button>
+        <button id="backToAufgaben" class="button" href="/aufgaben" data-navigo>zurück</button>
         <button id="saveAufgabe">speichern</button>
       </main>
     </section>
 
     <section id="neuesFach" class="hidden">
       <header></header>
-
       <main>
         <h3>Neues Fach:</h3>
         <input id="inputFach" placeholder="Fach" type="text" />
         <input id="inputDozent" placeholder="Dozent" type="text" />
         <input id="inputNotiz" placeholder="Notiz" type="text" />
         <input id="inputKlausur" placeholder="Klausur" type="text" />
-        <button id="backToFächer" class="button" href="/fächer" data-navigo>
-          zurück
-        </button>
+        <button id="backToFächer" class="button" href="/fächer" data-navigo>zurück</button>
         <button id="saveFach">speichern</button>
       </main>
     </section>
 
     <section id="designs" class="hidden">
       <header></header>
-
       <main>
         <h3>Hintergrund</h3>
         <h3>Farbschema</h3>
         <p>hier könnte ihr Design stehen</p>
       </main>
-    </section>
+  </section>
+
   </body>
 </html>
