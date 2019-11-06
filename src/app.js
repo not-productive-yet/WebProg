@@ -14,7 +14,7 @@ export default class App {
     this._title = "Mein Lernplan";
     this._currentView = null;
 
-    this._router = new Navigo();
+    this._router = new Navigo(null, true);
     this._currentUrl = "";
     this._navAborted = false;
 

@@ -24,20 +24,10 @@ h3 {
   display: none;
 }
 
-.remove {
-  margin: 13px;
-  display: inline;
-}
-
-.edit {
-  margin: 13px;
-  display: inline;
-}
-
 .entries li {
   margin: 5pt;
   width: 290pt;
-  height: 160pt;
+  height: 150pt;
   display: inline-grid;
 }
 

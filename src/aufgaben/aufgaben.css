@@ -6,28 +6,21 @@
   position: relative;
 }
 
-.neueAufgabe main {
-  background-color: #608078;
-  color: white;
-  width: 500pt;
-  height: 200pt;
-}
 #fach {
-  font-size: 15pt;
+  font-size: 14pt;
   margin-top: 20pt;
   text-transform: uppercase;
-  height: 30px;
-  width: 300px;
+  width: 380px;
+  margin-bottom: 0pt;
 }
 #aufgabenBlock {
   border-top-color: #374a45;
   border-top-style: solid;
+  padding-left: 5pt;
 }
 #aufgabenList li:hover {
-  border-style: solid;
-  border-color: #d4ffeb;
+  border: 1px solid white;
   cursor: pointer;
-  border-width: 2px;
 }
 #todo {
   margin-top: 10pt;
@@ -44,7 +37,7 @@
 }
 
 #aufgabenList li {
-  border-bottom-style: ridge;
+  border: 1px solid transparent;
   list-style-type: disc;
   list-style: url("../images/book-icon-white.png"); /*funzt nich*/
 }

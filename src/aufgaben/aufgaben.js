@@ -1,7 +1,7 @@
 "use strict";
 
 import stylesheet from "./aufgaben.css";
-import { loadAufgaben } from "./aufgabenList.js";
+import { loadAufgaben, remove } from "./aufgabenList.js";
 
 export default class Aufgaben {
   constructor(app) {
@@ -9,7 +9,6 @@ export default class Aufgaben {
   }
   onShow() {
     let section = document.querySelector("#aufgaben").cloneNode(true);
-
     loadAufgaben();
 
     return {

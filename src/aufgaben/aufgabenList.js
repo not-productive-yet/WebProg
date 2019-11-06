@@ -12,10 +12,6 @@ export function loadAufgaben() {
       "<div id='fach'>" +
       elements[i].fach +
       "</div>" +
-      '<button class="remove" id="' +
-      i +
-      '">x</button>' +
-      " " +
       "<div id='aufgabenBlock'>" +
       "<div id='todo'>" +
       elements[i].todo +
@@ -25,10 +21,20 @@ export function loadAufgaben() {
       elements[i].tageBisFällig +
       "</div>" +
       " tage bis fällig" +
+      '<button class="removeAufgaben" id="' +
+      i +
+      '">x</button>' +
+      " " +
       "</div></li>";
   }
 
   html += "</ul>";
+
+  //hier ein await document load
+  var deleteButtons = document.querySelectorAll(".removeAufgaben");
+  for (var i = 0; i < deleteButtons.length; i++) {
+    deleteButtons[i].addEventListener("click", remove);
+  }
 
   document.getElementById("aufgabenList").innerHTML = html;
 }
@@ -47,9 +53,8 @@ export function addAufgabe() {
 }
 
 function remove() {
-  //TODO: einbinden
   console.log("remove aufgerufen");
   var id = this.getAttribute("id");
   elements.splice(id, 1);
-  load();
+  loadAufgaben();
 }

@@ -1,6 +1,6 @@
 "use strict";
 
-import stylesheet from "./aufgaben.css";
+import stylesheet from "./neueAufgabe.css";
 import { addAufgabe } from "./aufgabenList.js";
 
 export default class NeueAufgabe {
@@ -9,6 +9,7 @@ export default class NeueAufgabe {
   }
   onShow() {
     let section = document.querySelector("#neueAufgabe").cloneNode(true);
+    section.querySelector("#saveAufgabe").addEventListener("click", addAufgabe);
     return {
       className: "neueAufgabe",
       topbar: section.querySelectorAll("header > *"),
