@@ -32,15 +32,7 @@ h3 {
   display: inline-grid;
 }
 
-nav {
-  list-style: none;
-  background-color: #608078;
-  color: white;
-  border: 0px solid #36554d;
-  border-bottom-width: 3px;
-  display: block;
-  width: 200px;
-}
+
 
 nav > ul {
   margin: 0;
