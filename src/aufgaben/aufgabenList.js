@@ -23,11 +23,11 @@ export function loadAufgaben() {
       "</div>" +
       " tage bis fällig" +
       "<div id='buttons'>" +
-      '<button class="removeAufgaben" id=""' +
+      '<button type="button" class="saveAndBack" class="button" class="removeAufgaben" id=""' +
       i +
       '">x</button>' +
       " " +
-      '<a href="/neueAufgabe" data-navigo><button class="editAufgabe" id="' +
+      '<a href="/neueAufgabe" data-navigo><button type="button" class="saveAndBack" class="button" class="editAufgabe" id="' +
       i +
       '">Edit-Aufgabe</button></a>' +
       " " +

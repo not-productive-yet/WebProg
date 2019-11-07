@@ -36,7 +36,7 @@ export function loadFächer() {
       "</div>" +
       " " +
       "<div id='buttonFächer'>"+
-      '<a href="/neuesFach" data-navigo><button class="editFach" id="' +
+      '<a href="/neuesFach" data-navigo><button type="button" class="saveAndBack" class="button" class="editFach" id="' +
       i +
       '">Edit-Fach</button></a>' +
       "<div>" +
