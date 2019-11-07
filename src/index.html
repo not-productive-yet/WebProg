@@ -30,20 +30,12 @@
 
       <main>
         <ul id="fächerList"></ul>
-<<<<<<< HEAD
-        <button type="button" class="add" id="addAufgabe" href="/neueAufgabe" data-navigo>
-        <div class="circle">
-          <span class="icon arrow"</span>
-        </div>
-        <p class="button-text">Add New</p>
-=======
         <button type="button" class="add" id="addFach" href="/neuesFach" data-navigo>
           <div class="circle">
             <span class="icon arrow" />
           </div>
           <p class="button-text">Add New</p>
         </button>
->>>>>>> f503aad80ce225ab0ed01db99f310c415127ee8f
       </main>
     </section>
 
@@ -71,7 +63,7 @@
           <input id="inputTodo" placeholder="Aufgabe" type="text" />
           <input id="inputTage" placeholder="Tage bis fällig" type="text" />
         </div>
-        <button type="button" class="saveAndBack" id="saveAufgabe">Zurück <i class="fa fa-home"></i></button>
+        <button type="button" class="saveAndBack" id="zurück" class="button" href="/Aufgaben" data-navigo>Zurück<i class="fa fa-home"></i></button>
         <button type="button" class="saveAndBack" id="saveAufgabe">Speichern <i class="fa fa-folder"></i></button>
       </main>
     </section>
@@ -88,13 +80,10 @@
             <input id="inputKlausur-Termin" placeholder="Klausur-Termin" type="date" />
             <input id="inputNotiz" placeholder="Notiz" type="text" />
         </div>
-        <button id="backToFächer" class="button" href="/fächer" data-navigo>
-          zurück
-        </button>
-        <button id="saveFach">speichern</button>
+        <button id="backToFächer"  type="button" class="saveAndBack" class="button" href="/fächer" data-navigo>Zurück <i class="fa fa-home"></button>
+        <button id="saveFach" type="button" class="saveAndBack" class="button">Speichern <i class="fa fa-folder"></button>
       </main>
     </section>
-
     <section id="designs" class="hidden">
       <header></header>
 
@@ -102,6 +91,7 @@
         <h3>Hintergrund</h3>
         <h3>Farbschema</h3>
         <p>hier könnte ihr Design stehen</p>
+        <button type="button" class="saveAndBack" id="darktheme">Dunkel <i class="fa fa-home"></i></button>
       </main>
     </section>
   </body>

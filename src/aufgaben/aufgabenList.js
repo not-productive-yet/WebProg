@@ -22,16 +22,10 @@ export function loadAufgaben() {
       elements[i].tageBisFällig +
       "</div>" +
       " tage bis fällig" +
-<<<<<<< HEAD
-      "<div id='löschen'>"+
-      '<button type="button" class="saveAndBack" class="removeAufgaben" id="saveAufgabe"> Löschen <i class="fa fa-trash"></i></button>'
-      "</div>"+
-=======
       "<div id='buttons'>" +
       '<button class="removeAufgaben" id=""' +
       i +
       '">x</button>' +
->>>>>>> f503aad80ce225ab0ed01db99f310c415127ee8f
       " " +
       '<a href="/neueAufgabe" data-navigo><button class="editAufgabe" id="' +
       i +
