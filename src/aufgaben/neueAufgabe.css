@@ -8,7 +8,7 @@
   margin: 20pt;
 }
 
-#inputsFächer input {
+#inputsAufgabe input {
   display: block;
   width: 300pt;
   height: 30pt;
@@ -20,4 +20,8 @@
   margin: 20pt;
   color: white;
   font-size: 15pt;
+}
+::placeholder{
+    color: white;
+    opacity: 1;
 }

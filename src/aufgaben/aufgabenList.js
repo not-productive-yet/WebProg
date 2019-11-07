@@ -2,7 +2,7 @@ var elements = [
   { fach: "webprogrammierung", todo: "app erstellen", tageBisFällig: 5 },
   { fach: "mobile applikationen", todo: "testen", tageBisFällig: 6 },
   { fach: "informatik", todo: "testen123", tageBisFällig: 7 },
-  { fach: "mathe", todo: "algebra", tageBisFällig: 89 }
+  { fach: "mathe", todo: "Algebra", tageBisFällig: 89 }
 ];
 
 export function loadAufgaben() {
@@ -22,17 +22,23 @@ export function loadAufgaben() {
       elements[i].tageBisFällig +
       "</div>" +
       " tage bis fällig" +
-      '<button class="removeAufgaben" id="' +
+      "<div id='buttons'>" +
+      '<button class="removeAufgaben" id=""' +
       i +
       '">x</button>' +
       " " +
+      '<a href="/neueAufgabe" data-navigo><button class="editAufgabe" id="' +
+      i +
+      '">Edit-Aufgabe</button></a>' +
+      " " +
+      "</div>"
       "</div></li>";
   }
 
   html += "</ul>";
 
   //hier ein await document load
-  var deleteButtons = document.querySelectorAll(".removeAufgaben");
+  var deleteButtons = document.querySelectorAll("removeAufgaben");
   for (var i = 0; i < deleteButtons.length; i++) {
     deleteButtons[i].addEventListener("click", remove);
   }

@@ -17,10 +17,7 @@
   border-top: 2px solid var(--dark-green-color);
   padding-left: 5pt;
 }
-#aufgabenList li:hover {
-  border: 1px solid var(--light-green-hover-color);
-  cursor: pointer;
-}
+
 #todo {
   margin-top: 10pt;
   font-size: 14pt;
@@ -41,8 +38,8 @@
 }
 
 #aufgabenListButtons {
-  display: inline-block;
-  margin-left: 260px;
+    display: inline-block;
+    margin-left: 260px;
 }
 
 #addAufgabe {
