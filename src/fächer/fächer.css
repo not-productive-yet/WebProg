@@ -7,3 +7,9 @@
   background-color: #608078;
   color: white;
 }
+
+.fächer #fächerNav {
+  background-color: rgba(121, 148, 141);
+  cursor: pointer;
+  color: black;
+}

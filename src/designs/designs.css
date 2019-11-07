@@ -1,3 +1,9 @@
-.kalender main {
+.designs main {
   color: white;
+}
+
+.designs #designNav {
+  background-color: rgba(121, 148, 141);
+  cursor: pointer;
+  color: black;
 }

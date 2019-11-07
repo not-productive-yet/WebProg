@@ -10,7 +10,7 @@ export default class Designs {
     let section = document.querySelector("#designs").cloneNode(true);
 
     return {
-      className: "kalender",
+      className: "designs",
       topbar: section.querySelectorAll("header > *"),
       main: section.querySelectorAll("main > *")
     };
