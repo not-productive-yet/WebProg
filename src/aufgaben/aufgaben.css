@@ -1,7 +1,9 @@
+@import url("../themes.css");
+
 .aufgaben main {
-  background-color: #608078;
   color: white;
   position: relative;
+  border: 1px solid var(--dark-green-color);
 }
 
 #fach {
@@ -12,14 +14,10 @@
   margin-bottom: 0pt;
 }
 #aufgabenBlock {
-  border-top-color: #374a45;
-  border-top-style: solid;
+  border-top: 2px solid var(--dark-green-color);
   padding-left: 5pt;
 }
-#aufgabenList li:hover {
-  border: 1px solid white;
-  cursor: pointer;
-}
+
 #todo {
   margin-top: 10pt;
   font-size: 14pt;
@@ -35,17 +33,22 @@
 }
 
 #aufgabenList li {
-  border: 1px solid transparent;
-  list-style-type: disc;
-  list-style: url("../images/book-icon-white.png"); /*funzt nich*/
+  border: 1px solid var(--dark-green-color);
+  background-color: var(--dark-green-transparent-color);
 }
 
 #aufgabenListButtons {
-  display: inline-block;
-  margin-left: 260px;
+    display: inline-block;
+    margin-left: 260px;
 }
 
 #addAufgabe {
   margin-top: 100pt;
   margin-left: 70pt;
+}
+
+.aufgaben #aufgabenNav {
+  background-color: var(--nav-selected-color);
+  cursor: pointer;
+  color: black;
 }

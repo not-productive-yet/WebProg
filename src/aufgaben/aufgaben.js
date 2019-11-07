@@ -1,7 +1,7 @@
 "use strict";
 
 import stylesheet from "./aufgaben.css";
-import { loadAufgaben, remove } from "./aufgabenList.js";
+import { loadAufgaben } from "./aufgabenList.js";
 
 export default class Aufgaben {
   constructor(app) {

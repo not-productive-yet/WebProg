@@ -1,7 +1,7 @@
 "use strict";
 
 import stylesheet from "./fächer.css";
-import { loadFächer } from "./fächerList";
+import { loadFächer } from "./fächerList.js";
 
 export default class Fächer {
   constructor(app) {

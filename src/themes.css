@@ -1,0 +1,6 @@
+html {
+  --dark-green-color: rgb(55, 74, 69);
+  --dark-green-transparent-color: rgba(121, 148, 141, 0.6);
+  --light-green-hover-color: rgb(212, 255, 235);
+  --nav-selected-color: rgba(121, 148, 141);
+}

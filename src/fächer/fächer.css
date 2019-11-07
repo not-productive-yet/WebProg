@@ -1,9 +1,53 @@
+@import url("../themes.css");
+
 .fächer main {
-  background-color: #608078;
   color: white;
 }
 
-.neuesFach main {
-  background-color: #608078;
-  color: white;
+#fachD{
+    font-size: 14pt;
+    text-transform: uppercase;
+    margin-top: 15pt;
+    width: 380px;
+}
+
+#fächerList li{
+    border: 2px solid var(--dark-green-color);
+    background-color: var(--dark-green-transparent-color);
+}
+
+#strich{
+    border-top: 2px solid var(--dark-green-color);
+}
+
+#dozent{
+    font-size: 14pt;
+}
+
+#email{
+    font-size: 14pt;
+}
+
+#klausurDatum{
+    font-size: 14pt;
+    padding-top: 15px;
+}
+
+#notizD{
+    font-size: 14pt;
+}
+
+#buttonFächer{
+    display: flex;
+}
+
+#addFach{
+    margin-top: 100pt;
+    margin-left: 70pt;
+}
+
+.fächer #fächerNav {
+  background-color: var(--nav-selected-color);
+  cursor: pointer;
+  color: black;
 }

@@ -6,13 +6,12 @@ body {
 
 h1 {
   font-family: "Titillium Web";
-  font-size: 27pt;
-  background-color: #608078;
+  font-size: 29pt;
   color: white;
   text-transform: uppercase;
   font-size: bold;
-  text-align: center;
-  border-radius: 0.25em;
+  margin-top: 30pt;
+  margin-left: 15pt;
 }
 
 h3 {
@@ -21,57 +20,50 @@ h3 {
   text-transform: uppercase;
 }
 
-.hidden {
-  display: none;
-}
-
-.entries li {
-  margin: 5pt;
-  width: 290pt;
-  height: 150pt;
-  display: inline-grid;
-}
-
-
-
-nav > ul {
-  margin: 0;
-  padding: 0;
-  border-radius: 0.5em;
+nav {
+  margin-top: 60pt;
 }
 
 nav ul {
-  background-color: #608078;
   color: white;
   font-weight: bold;
   display: block;
-  width: 200px;
+  width: 300px;
+  height: 505px;
   float: left;
   text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
   list-style: none;
   position: relative;
-  padding: 0;
-  font-size: 20pt;
-  padding: 0.5em;
+  font-size: 18pt;
+  padding: 90px;
 }
 
 nav li:hover {
-  background-color: #d4ffeb;
+  background-color: rgba(121, 148, 141, 0.5);
   cursor: pointer;
   color: black;
-  border-radius: 0.25em;
+}
+
+nav li:active {
+  background-color: #d4ffeb;
+  color: black;
 }
 
 main {
-  display: block;
-  margin-left: 14.5em;
-  text-align: center;
-  color: white;
-  background-color: #608078;
-  border-radius: 0.5em;
+    display: block;
+    margin-left: 270pt;
+    text-align: center;
+    color: white;
+    /*background-color: #608078;*/
+    margin-top: 60pt;
+    margin-right: 20pt;
+   /* width: 1400px; Brauchen wir das? */
 }
 
 button {
@@ -200,6 +192,6 @@ button:hover {
 .entries li {
   margin: 5pt;
   width: 290pt;
-  height: 160pt;
+  height: 150pt;
   display: inline-grid;
 }
