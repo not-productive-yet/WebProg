@@ -29,8 +29,12 @@
 
       <main>
         <ul id="fächerList"></ul>
-        <button id="addAufgabe" href="/neuesFach" data-navigo>+</button>
-        <a>Fach hinzufügen</a>
+        <button type="button" class="add" id="addFach" href="/neuesFach" data-navigo>
+          <div class="circle">
+            <span class="icon arrow" />
+          </div>
+          <p class="button-text">Add New</p>
+        </button>
       </main>
     </section>
 
@@ -39,13 +43,7 @@
 
       <main>
         <ul id="aufgabenList"></ul>
-        <button
-          type="button"
-          class="add"
-          id="addAufgabe"
-          href="/neueAufgabe"
-          data-navigo
-        >
+        <button type="button" class="add" id="addAufgabe" href="/neueAufgabe" data-navigo>
           <div class="circle">
             <span class="icon arrow" />
           </div>
@@ -59,7 +57,7 @@
 
       <main>
         <h3>Neue Aufgabe:</h3>
-        <div id="inputsFächer">
+        <div id="inputsAufgabe">
           <input id="inputFach" placeholder="Fach" type="text" />
           <input id="inputTodo" placeholder="Aufgabe" type="text" />
           <input id="inputTage" placeholder="Tage bis fällig" type="text" />
@@ -76,10 +74,13 @@
 
       <main>
         <h3>Neues Fach:</h3>
-        <input id="inputFach" placeholder="Fach" type="text" />
-        <input id="inputDozent" placeholder="Dozent" type="text" />
-        <input id="inputNotiz" placeholder="Notiz" type="text" />
-        <input id="inputKlausur" placeholder="Klausur" type="text" />
+        <div id="inputsFächer">
+            <input id="inputFach" placeholder="Fach" type="text" />
+            <input id="inputDozent" placeholder="Dozent" type="text" />
+            <input id="inputEmail" placeholder="E-Mail" type="text" />
+            <input id="inputKlausur-Termin" placeholder="Klausur-Termin" type="date" />
+            <input id="inputNotiz" placeholder="Notiz" type="text" />
+        </div>
         <button id="backToFächer" class="button" href="/fächer" data-navigo>
           zurück
         </button>

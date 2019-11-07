@@ -1,0 +1,29 @@
+.neuesFach main{
+    background-color: #608078;
+    color: white;
+    width: 400pt;
+    height: 400pt;
+}
+
+.neuesFach button{
+    margin: 20pt;
+}
+
+#inputsFächer input{
+    display: block;
+    width: 300pt;
+    height: 30pt;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    margin: 20pt;
+    color: white;
+    font-size: 15pt;
+}
+
+::placeholder{
+    color: white;
+    opacity: 1;
+}

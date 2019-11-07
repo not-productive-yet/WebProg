@@ -41,7 +41,7 @@ nav li {
   list-style: none;
   position: relative;
   font-size: 18pt;
-  padding: 87px;
+  padding: 90px;
 }
 
 nav li:hover {
@@ -56,14 +56,14 @@ nav li:active {
 }
 
 main {
-  display: block;
-  margin-left: 270pt;
-  text-align: center;
-  color: white;
-  /*background-color: #608078;*/
-  margin-top: 60pt;
-  margin-right: 20pt;
-  width: 1400px;
+    display: block;
+    margin-left: 270pt;
+    text-align: center;
+    color: white;
+    /*background-color: #608078;*/
+    margin-top: 60pt;
+    margin-right: 20pt;
+   /* width: 1400px; Brauchen wir das? */
 }
 
 button {
