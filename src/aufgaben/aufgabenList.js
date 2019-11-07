@@ -22,9 +22,9 @@ export function loadAufgaben() {
       elements[i].tageBisFällig +
       "</div>" +
       " tage bis fällig" +
-      '<button class="removeAufgaben" id="' +
-      i +
-      '">x</button>' +
+      "<div id='löschen'>"+
+      '<button type="button" class="saveAndBack" class="removeAufgaben" id="saveAufgabe"> Löschen <i class="fa fa-trash"></i></button>'
+      "</div>"+
       " " +
       "</div></li>";
   }

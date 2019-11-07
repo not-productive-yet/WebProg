@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Mein Lernplan</title>
 
     <style>
@@ -30,8 +31,11 @@
       <main>
         <h3>Meine Fächer</h3>
         <ul id="fächerList"></ul>
-        <button id="addAufgabe" href="/neuesFach" data-navigo>+</button>
-        <a>Fach hinzufügen</a>
+        <button type="button" class="add" id="addAufgabe" href="/neueAufgabe" data-navigo>
+        <div class="circle">
+          <span class="icon arrow"</span>
+        </div>
+        <p class="button-text">Add New</p>
       </main>
     </section>
 
@@ -60,10 +64,8 @@
           <input id="inputTodo" placeholder="Aufgabe" type="text" />
           <input id="inputTage" placeholder="Tage bis fällig" type="text" />
         </div>
-        <button id="backToAufgaben" class="button" href="/aufgaben" data-navigo>
-          zurück
-        </button>
-        <button id="saveAufgabe">speichern</button>
+        <button type="button" class="saveAndBack" id="saveAufgabe">Zurück <i class="fa fa-home"></i></button>
+        <button type="button" class="saveAndBack" id="saveAufgabe">Speichern <i class="fa fa-folder"></i></button>
       </main>
     </section>
 
