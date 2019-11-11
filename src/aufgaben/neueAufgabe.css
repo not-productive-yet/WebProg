@@ -1,26 +1,33 @@
 .neueAufgabe main {
-  background-color: #608078;
-  color: white;
-  width: 400pt;
-  height: 300pt;
+    background-color: var(--dark-green-color);
+    color: white;
+    text-align: center;
+    margin-left: 350pt;
+    margin-right: 100pt;
+
 }
 .neueAufgabe button {
-  margin: 20pt;
+    margin: 10pt;
+}
+
+#überschriftNeueAufgabe{
+    padding:10pt;
 }
 
 #inputsAufgabe input {
-  display: block;
-  width: 300pt;
-  height: 30pt;
-  background-color: transparent;
-  border-bottom: 2px solid white;
-  border-top: 2px solid transparent;
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
-  margin: 20pt;
-  color: white;
-  font-size: 15pt;
+    text-align: center;
+    width: 400pt;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    margin: 10pt;
+    padding: 5pt;
+    color: white;
+    font-size: 15pt;
 }
+
 ::placeholder{
     color: white;
     opacity: 1;
