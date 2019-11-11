@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Mein Lernplan</title>
 
     <style>
@@ -30,7 +33,13 @@
 
       <main>
         <ul id="fächerList"></ul>
-        <button type="button" class="add" id="addFach" href="/neuesFach" data-navigo>
+        <button
+          type="button"
+          class="add"
+          id="addFach"
+          href="/neuesFach"
+          data-navigo
+        >
           <div class="circle">
             <span class="icon arrow" />
           </div>
@@ -44,7 +53,13 @@
 
       <main>
         <ul id="aufgabenList"></ul>
-        <button type="button" class="add" id="addAufgabe" href="/neueAufgabe" data-navigo>
+        <button
+          type="button"
+          class="add"
+          id="addAufgabe"
+          href="/neueAufgabe"
+          data-navigo
+        >
           <div class="circle">
             <span class="icon arrow" />
           </div>
@@ -63,8 +78,19 @@
           <input id="inputTodo" placeholder="Aufgabe" type="text" />
           <input id="inputTage" placeholder="Tage bis fällig" type="text" />
         </div>
-        <button type="button" class="saveAndBack" id="zurück" class="button" href="/Aufgaben" data-navigo>Zurück<i class="fa fa-home"></i></button>
-        <button type="button" class="saveAndBack" id="saveAufgabe">Speichern <i class="fa fa-folder"></i></button>
+        <button
+          type="button"
+          class="saveAndBack"
+          id="zurück"
+          class="button"
+          href="/Aufgaben"
+          data-navigo
+        >
+          Zurück<i class="fa fa-home"></i>
+        </button>
+        <button type="button" class="saveAndBack" id="saveAufgabe">
+          Speichern <i class="fa fa-folder"></i>
+        </button>
       </main>
     </section>
 
@@ -74,14 +100,25 @@
       <main>
         <h3>Neues Fach:</h3>
         <div id="inputsFächer">
-            <input id="inputFach" placeholder="Fach" type="text" />
-            <input id="inputDozent" placeholder="Dozent" type="text" />
-            <input id="inputEmail" placeholder="E-Mail" type="text" />
-            <input id="inputKlausur-Termin" placeholder="Klausur-Termin" type="date" />
-            <input id="inputNotiz" placeholder="Notiz" type="text" />
+          <input id="inputFach" placeholder="Fach" type="text" />
+          <input id="inputDozent" placeholder="Dozent" type="text" />
+          <input id="inputEmail" placeholder="E-Mail" type="text" />
+          <input id="inputKlausur" placeholder="Klausurtermin" type="date" />
+          <input id="inputNotiz" placeholder="Notiz" type="text" />
         </div>
-        <button id="backToFächer"  type="button" class="saveAndBack" class="button" href="/fächer" data-navigo>Zurück <i class="fa fa-home"></button>
-        <button id="saveFach" type="button" class="saveAndBack" class="button">Speichern <i class="fa fa-folder"></button>
+        <button
+          id="backToFächer"
+          type="button"
+          class="saveAndBack"
+          class="button"
+          href="/fächer"
+          data-navigo
+        >
+          Zurück <i class="fa fa-home" />
+        </button>
+        <button id="saveFach" type="button" class="saveAndBack" class="button">
+          Speichern <i class="fa fa-folder" />
+        </button>
       </main>
     </section>
     <section id="designs" class="hidden">
@@ -91,7 +128,9 @@
         <h3>Hintergrund</h3>
         <h3>Farbschema</h3>
         <p>hier könnte ihr Design stehen</p>
-        <button type="button" class="saveAndBack" id="darktheme">Dunkel <i class="fa fa-home"></i></button>
+        <button type="button" class="saveAndBack" id="darktheme">
+          Dunkel <i class="fa fa-home"></i>
+        </button>
       </main>
     </section>
   </body>
