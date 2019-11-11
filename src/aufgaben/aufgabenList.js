@@ -12,11 +12,11 @@ export async function loadAufgaben() {
   } else {
     for (var i = 0; i < elements.length; i++) {
       html +=
-        "<li>" +
+        "<li id='kastenAußen'>" +
+        "<div id='kastenInnen'>"+
         "<div id='fach'>" +
         elements[i].fach +
         "</div>" +
-        "<div id='aufgabenBlock'>" +
         "<div id='todo'>" +
         elements[i].todo +
         "</div>" +
@@ -35,7 +35,8 @@ export async function loadAufgaben() {
         '">Edit-Aufgabe</button></a>' +
         " " +
         "</div>" +
-        "</div></li>";
+        "</div>"+
+        "</li>";
     }
     html += "</ul>";
     var deleteButtons = document.querySelectorAll("removeAufgaben");
