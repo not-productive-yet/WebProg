@@ -31,7 +31,6 @@ nav ul {
   display: flex;
   flex-direction: column;
   float: left;
-  text-align: center;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -42,6 +41,7 @@ nav li {
   position: relative;
   font-size: 18pt;
   padding: 90px;
+  text-align: center;
 }
 
 nav li:hover {
@@ -58,7 +58,7 @@ nav li:active {
 main {
     display: block;
     margin-left: 270pt;
-    text-align: center;
+    /*text-align: center;*/
     color: white;
     /*background-color: #608078;*/
     margin-top: 60pt;
