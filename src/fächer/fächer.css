@@ -4,45 +4,35 @@
   color: white;
 }
 
-#fachD{
-    font-size: 14pt;
+#kastenAußen{
+    margin: 15pt;
+}
+
+#kastenInnen{
+    font-size: 12pt;
     text-transform: uppercase;
-    margin-top: 15pt;
-    width: 380px;
-}
-
-#fächerList li{
-    border: 2px solid var(--dark-green-color);
     background-color: var(--dark-green-transparent-color);
+    border: 2px solid var(--dark-green-color);
 }
 
-#strich{
-    border-top: 2px solid var(--dark-green-color);
+#fachD{
+    padding: 10pt;
 }
 
 #dozent{
-    font-size: 14pt;
-}
-
-#email{
-    font-size: 14pt;
+    border-top: 2px solid var(--dark-green-color);
+    padding-top: 5pt;
 }
 
 #klausurDatum{
-    font-size: 14pt;
-    padding-top: 15px;
-}
-
-#notizD{
-    font-size: 14pt;
+    padding-top: 15pt;
 }
 
 #buttonFächer{
-    display: flex;
+    padding-top: 5pt;
 }
 
 #addFach{
-    margin-top: 100pt;
     margin-left: 70pt;
 }
 

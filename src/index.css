@@ -28,8 +28,8 @@ nav ul {
   color: white;
   font-weight: bold;
   display: block;
-  width: 300px;
-  height: 505px;
+  display: flex;
+  flex-direction: column;
   float: left;
   text-align: center;
   text-transform: uppercase;
@@ -87,13 +87,13 @@ button.delete{
 button.saveAndBack{
   background-color: #608078;
   color: white;
-  padding: 12px 16px;
-  font-size: 16px;
+  padding: 8px 12px;
+  font-size: 14px;
   cursor: pointer;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
+  border-bottom: 2px solid var(--dark-green-color);
+  border-top: 2px solid var(--dark-green-color);
+  border-left: 2px solid var(--dark-green-color);
+  border-right: 2px solid var(--dark-green-color);
   border-radius: 0.5em;
 }
 button.add {

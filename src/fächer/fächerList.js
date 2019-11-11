@@ -10,11 +10,11 @@ export function loadFächer() {
   var html = "<ul class='entries' id='fächerEntries'>";
   for (var i = 0; i < elements.length; i++) {
     html +=
-      "<li>" +
-      "<div id='fachD'>" +
+      "<li id='kastenAußen'>" +
+      "<div id='kastenInnen'>" +
+      "<div id ='fachD'>"+
       elements[i].fachD +
-      "</div>" +
-      "<div id='strich'>" +
+      "</div>"+
       "<div id='dozent'>" +
       "Dozent: " +
       elements[i].dozent +
@@ -39,7 +39,9 @@ export function loadFächer() {
       '<a href="/neuesFach" data-navigo><button type="button" class="saveAndBack" class="button" class="editFach" id="' +
       i +
       '">Edit-Fach</button></a>' +
-      "<div>" +
+
+      "</div>"+
+      "</div>"+
       "</li>";
   }
 
