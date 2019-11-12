@@ -11,36 +11,35 @@ export async function loadFächer() {
   } else {
     for (var i = 0; i < elements.length; i++) {
       html +=
-        "<li>" +
+        "<li id='kastenAußenFächer'>" +
+        "<div id='kastenInnenFächer'>" +
         "<div id='fachD'>" +
-        elements[i].fachD +
+        elements[i].fachD+
         "</div>" +
-        "<div id='strich'>" +
         "<div id='dozent'>" +
-        "Dozent: " +
+        "<b>Dozent: </b>" +
         elements[i].dozent +
         "</div>" +
-        " " +
         "<div id='email'>" +
-        " E-Mail: " +
+        "<b>E-Mail: </b>" +
         elements[i].email +
         "</div>" +
-        " " +
         "<div id='klausurDatum'>" +
-        "Klausur-Termin: " +
+        "<b>Klausur-Termin: </b>" +
         elements[i].klausurDatum +
         "</div>" +
         " " +
         "<div id='notizD'>" +
-        "Notiz: " +
+        "<b>Notiz: </b>" +
         elements[i].notizD +
         "</div>" +
         " " +
         "<div id='buttonFächer'>" +
-        '<a href="/neuesFach" data-navigo><button type="button" class="saveAndBack" class="button" class="editFach" id="' +
+        '<a href="" data-navigo><button type="button" class="saveAndBack" class="button" class="editFach" id="' +
         i +
         '">Edit-Fach</button></a>' +
-        "<div>" +
+        "</div>" +
+        "</div>"+
         "</li>";
     }
 

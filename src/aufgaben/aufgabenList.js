@@ -30,7 +30,7 @@ export async function loadAufgaben() {
         i +
         '">x</button>' +
         " " +
-        '<a href="/neueAufgabe" data-navigo><button type="button" class="saveAndBack" class="button" class="editAufgabe" id="' +
+        '<a href="" data-navigo><button type="button" class="saveAndBack" class="button" class="editAufgabe" id="' +
         i +
         '">Edit-Aufgabe</button></a>' +
         " " +

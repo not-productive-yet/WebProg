@@ -63,7 +63,7 @@ main {
     /*background-color: #608078;*/
     margin-top: 60pt;
     margin-right: 20pt;
-   /* width: 1400px; Brauchen wir das? */
+    width: 900px;
 }
 
 button {
