@@ -4,72 +4,104 @@
   color: white;
   text-align: left;
 }
-
-#fächerList{
-    margin-left: 25px;
-    margin-bottom: 25px;
+/* webkit geht nur in chrome */
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-#kastenAußenFächer{
-    margin: 15pt;
-    width: 400px;
-    height: 225px;
+::-webkit-scrollbar-track {
+  background: white;
 }
 
-#kastenInnenFächer{
-    font-size: 12pt;
-    text-transform: uppercase;
-    background-color: var(--dark-green-color);
-    border: 2px solid var(--dark-green-transparent-color);
+::-webkit-scrollbar-thumb {
+  background: var(--fächer-green-color);
 }
 
-#fachD{
-    padding-left: 10pt;
-    padding-top: 10pt;
-    padding-bottom: 10pt;
-    border-bottom: 2px solid var(--dark-green-transparent-color);
-    font-size: 16pt;
+#fächerEntries {
+  display: inline-grid;
+  grid-template-columns: 450px 450px;
+  margin-left: 150px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 510px;
+  position: relative;
+  width: 900px;
 }
 
-#dozent{
-    padding-top: 5pt;
-    padding-left: 10pt;
+#fächerList {
+  margin-left: 25px;
+  margin-bottom: 25px;
 }
 
-#email{
-    padding-left: 10pt;
-    padding-top: 2.5pt;
-    padding-bottom: 5pt;
-    border-bottom: 2px solid var(--dark-green-transparent-color);
+#kastenAußenFächer {
+  margin: 15pt;
+  width: 400px;
+  height: 225px;
 }
 
-#klausurDatum{
-    padding-top: 5pt;
-    padding-bottom: 2.5pt;
-    padding-left: 10pt;
+#kastenInnenFächer {
+  font-size: 12pt;
+  text-transform: uppercase;
+  background-color: var(--fächer-green-color);
+  border: 2px solid var(--dark-green-color);
 }
 
-#notizD{
-    padding-left: 10pt;
+#fachD {
+  padding-left: 10pt;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+  border-bottom: 2px solid var(--dark-green-color);
+  font-size: 16pt;
+  font-weight: bold;
+  background-color: var(--fächer-dark-green-color);
 }
 
-#buttonFächer{
-    padding-top: 20pt;
-    padding-left: 10pt;
-    padding-bottom: 5pt;
+#dozent {
+  padding-top: 10pt;
+  padding-left: 10pt;
 }
 
-#addFach{
-    margin-left: 120px;
+#email {
+  padding-left: 10pt;
+  padding-top: 2.5pt;
+  padding-bottom: 5pt;
+  border-bottom: 2px solid var(--dark-green-color);
 }
 
-#addNewButtonFächer{
-    background-color: var(--dark-green-color);
-    border: 2px solid var(--dark-green-transparent-color);
+#klausurDatum {
+  padding-top: 10pt;
+  padding-bottom: 2.5pt;
+  padding-left: 10pt;
+}
+
+#notizD {
+  padding-left: 10pt;
+  padding-bottom: 30pt;
+}
+
+#buttonFächer {
+  padding-top: 20pt;
+  padding-left: 10pt;
+  padding-bottom: 5pt;
+}
+
+#addFach {
+  margin-left: 270px;
+  margin-top: 20px;
+}
+
+#addNewButtonFächer {
+  background-color: var(--fächer-dark-green-color);
+  border: 2px solid var(--dark-green-color);
 }
 
 .fächer #fächerNav {
-  background-color: var(--nav-selected-color);
+  background-color: var(--fächer-dark-green-color);
   cursor: pointer;
-  color: black;
+  color: white;
+}
+
+#kastenInnenFächer:hover {
+  border-color: white;
+  cursor: pointer;
 }

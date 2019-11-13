@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 body {
   font-family: "Montserrat";
   font-size: 12pt;
@@ -6,7 +10,7 @@ body {
 
 h1 {
   font-family: "Titillium Web";
-  font-size: 29pt;
+  font-size: 30pt;
   color: white;
   text-transform: uppercase;
   font-size: bold;
@@ -47,7 +51,7 @@ nav li {
 nav li:hover {
   background-color: rgba(121, 148, 141, 0.5);
   cursor: pointer;
-  color: black;
+  font-style: oblique;
 }
 
 nav li:active {
@@ -56,12 +60,12 @@ nav li:active {
 }
 
 main {
-    display: block;
-    margin-left: 270pt;
-    color: white;
-    margin-top: 60pt;
-    margin-right: 20pt;
-    width: 900px;
+  position: relative;
+  margin-left: 270pt;
+  color: white;
+  margin-top: 60pt;
+  margin-right: 20pt;
+  width: 900px;
 }
 
 button {
@@ -70,7 +74,7 @@ button {
   background-color: #608078;
   cursor: pointer;
 }
-button.delete{
+button.delete {
   background-color: #608078;
   color: white;
   padding: 12px 16px;
@@ -82,7 +86,7 @@ button.delete{
   border-right: 2px solid white;
   border-radius: 0.5em;
 }
-button.saveAndBack{
+button.saveAndBack {
   background-color: #608078;
   color: white;
   padding: 8px 12px;
@@ -135,7 +139,7 @@ button.add .circle .icon.arrow {
 }
 button.add .circle .icon.arrow::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -0.25rem;
   right: 0.0625rem;
   width: 0.625rem;
@@ -152,7 +156,7 @@ button.add .button-text {
   right: 0;
   bottom: 0;
   padding: 0.85rem 0;
-  margin: 0 0 0 1.85rem;
+  margin: 0 0 0 0.85rem;
   color: #fff;
   font-weight: 700;
   line-height: 1.6;
@@ -191,5 +195,5 @@ button:hover {
   margin: 5pt;
   width: 290pt;
   height: 150pt;
-  display: inline-grid;
+  list-style: none;
 }

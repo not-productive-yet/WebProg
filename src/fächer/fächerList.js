@@ -14,7 +14,7 @@ export async function loadFächer() {
         "<li id='kastenAußenFächer'>" +
         "<div id='kastenInnenFächer'>" +
         "<div id='fachD'>" +
-        elements[i].fachD+
+        elements[i].fachD +
         "</div>" +
         "<div id='dozent'>" +
         "<b>Dozent: </b>" +
@@ -34,11 +34,11 @@ export async function loadFächer() {
         elements[i].notizD +
         "</div>" +
         " " +
-        "<div id='buttonFächer'>" +
-        '<a href="/neuesFach#/neuesFach"><button type="button" class="saveAndBack" class="button" class="editFach" id="editFach"' +
-        '>BEARBEITEN</button></a>' +
+        // "<div id='buttonFächer'>" +
+        // '<a href="/neuesFach#/neuesFach"><button type="button" class="saveAndBack" class="button" class="editFach" id="editFach"' +
+        // '>BEARBEITEN</button></a>' +
+        // "</div>" +
         "</div>" +
-        "</div>"+
         "</li>";
     }
 

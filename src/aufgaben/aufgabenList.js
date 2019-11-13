@@ -4,7 +4,6 @@ export async function loadAufgaben() {
   let aufgaben = new Database.Aufgaben();
 
   var elements = await aufgaben.getAll();
-
   console.log(elements);
   var html = "<ul class='entries' id='aufgabenEntries'>";
   if (elements.length == 0) {
@@ -13,7 +12,7 @@ export async function loadAufgaben() {
     for (var i = 0; i < elements.length; i++) {
       html +=
         "<li id='kastenAußen'>" +
-        "<div id='kastenInnen'>"+
+        "<div id='kastenInnen'>" +
         "<div id='fach'>" +
         elements[i].fach +
         "</div>" +
@@ -25,17 +24,17 @@ export async function loadAufgaben() {
         elements[i].tageBisFällig +
         "</div>" +
         " tage bis fällig" +
-        "<div id='buttons'>" +
-        '<button type="button" class="saveAndBack" class="button" class="removeAufgaben" id="remove"' +
-        i +
-        '">x</button>' +
-        " " +
-        '<a href="" data-navigo><button type="button" class="saveAndBack" class="button" class="editAufgabe" id="edit"' +
-        i +
-        '">BEARBEITEN</button></a>' +
-        " " +
+        // "<div id='buttons'>" +
+        // '<button type="button" class="saveAndBack" class="button" class="removeAufgaben" id="remove"' +
+        // i +
+        // '">x</button>' +
+        // " " +
+        // '<a href="" data-navigo><button type="button" class="saveAndBack" class="button" class="editAufgabe" id="edit"' +
+        // i +
+        // '">BEARBEITEN</button></a>' +
+        // " " +
+        // "</div>" +
         "</div>" +
-        "</div>"+
         "</li>";
     }
     html += "</ul>";

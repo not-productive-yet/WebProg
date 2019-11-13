@@ -5,56 +5,95 @@
   text-align: center;
 }
 
-#aufgabenList{
-    margin: 10pt;
+/* webkit geht nur in chrome */
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-#kastenAußen{
-    margin: 15px;
-    height: 200px;
-    width: 400px;
+::-webkit-scrollbar-track {
+  background: white;
 }
 
-#kastenInnen{
-    font-size: 12pt;
-    text-transform: uppercase;
-    background-color: var(--dark-green-transparent-color);
-    border: 2px solid var(--dark-green-color);
+::-webkit-scrollbar-thumb {
+  background: var(--dark-green-color);
+}
+#aufgabenEntries {
+  display: inline-grid;
+  grid-template-columns: 450px 450px 450px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 700px;
+  position: relative;
+  width: 1400px;
+}
+
+#kastenAußen {
+  margin: 15px;
+  height: 200px;
+  width: 400px;
+}
+
+#kastenInnen {
+  font-size: 12pt;
+  text-transform: uppercase;
+  background-color: var(--dark-green-transparent-color);
+  border: 2px solid var(--dark-green-color);
+  height: 190px;
 }
 
 #fach {
-    padding: 10pt;
+  padding: 10pt;
+  background-color: var(--dark-green-less-transparent-color);
+  font-size: 17pt;
+  font-weight: bold;
 }
 
 #todo {
-    border-top: 2px solid var(--dark-green-color);
-    padding: 10pt;
-    font-size: 16pt;
+  border-top: 2px solid var(--dark-green-color);
+  padding: 10pt;
+  font-size: 15pt;
 }
 
 #tageBisFällig {
-    display: inline;
-    padding: 10pt;
-    font-style: italic;
-    font-size: 16pt;
+  display: inline;
+  padding: 10pt;
+  font-style: italic;
+  font-size: 16pt;
 }
 
-#buttons{
-    padding-top: 20pt;
-    padding-bottom: 5pt;
+#buttons {
+  padding-top: 20pt;
+  padding-bottom: 5pt;
 }
 
-#addAufgabe {
-    margin-left: 70pt;
-}
-
-#addNewButtonAufgaben{
-    background-color: var(--dark-green-transparent-color);
-    border: 2px solid var(--dark-green-color);
+#addNewButtonAufgaben {
+  background-color: var(--dark-green-transparent-color);
+  border: 2px solid var(--dark-green-color);
+  margin-left: 0;
 }
 
 .aufgaben #aufgabenNav {
   background-color: var(--nav-selected-color);
   cursor: pointer;
-  color: black;
+}
+#kastenInnenFächer:hover {
+  border-color: white;
+  cursor: pointer;
+}
+#kastenInnenFächer:hover {
+  border-color: white;
+  cursor: pointer;
+}
+#kastenInnenFächer:hover {
+  border-color: white;
+  cursor: pointer;
+}
+
+#kastenInnen:hover {
+  border-color: white;
+  cursor: pointer;
+}
+
+#addAufgabe {
+  margin-left: -400pt;
 }
