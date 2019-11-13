@@ -35,9 +35,8 @@ export async function loadFächer() {
         "</div>" +
         " " +
         "<div id='buttonFächer'>" +
-        '<a href="" data-navigo><button type="button" class="saveAndBack" class="button" class="editFach" id="' +
-        i +
-        '">Edit-Fach</button></a>' +
+        '<a href="/neuesFach#/neuesFach"><button type="button" class="saveAndBack" class="button" class="editFach" id="editFach"' +
+        '>BEARBEITEN</button></a>' +
         "</div>" +
         "</div>"+
         "</li>";

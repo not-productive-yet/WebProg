@@ -6,24 +6,29 @@
 }
 
 #fächerList{
-    margin: 10pt;
+    margin-left: 25px;
+    margin-bottom: 25px;
 }
 
 #kastenAußenFächer{
     margin: 15pt;
+    width: 400px;
+    height: 225px;
 }
 
 #kastenInnenFächer{
     font-size: 12pt;
     text-transform: uppercase;
     background-color: var(--dark-green-color);
+    border: 2px solid var(--dark-green-transparent-color);
 }
 
 #fachD{
     padding-left: 10pt;
     padding-top: 10pt;
-    padding-bottom: 5pt;
+    padding-bottom: 10pt;
     border-bottom: 2px solid var(--dark-green-transparent-color);
+    font-size: 16pt;
 }
 
 #dozent{
@@ -33,12 +38,14 @@
 
 #email{
     padding-left: 10pt;
+    padding-top: 2.5pt;
     padding-bottom: 5pt;
     border-bottom: 2px solid var(--dark-green-transparent-color);
 }
 
 #klausurDatum{
     padding-top: 5pt;
+    padding-bottom: 2.5pt;
     padding-left: 10pt;
 }
 
@@ -47,12 +54,18 @@
 }
 
 #buttonFächer{
-    padding-top: 10pt;
+    padding-top: 20pt;
     padding-left: 10pt;
+    padding-bottom: 5pt;
 }
 
 #addFach{
-    margin-left: 70pt;
+    margin-left: 120px;
+}
+
+#addNewButtonFächer{
+    background-color: var(--dark-green-color);
+    border: 2px solid var(--dark-green-transparent-color);
 }
 
 .fächer #fächerNav {

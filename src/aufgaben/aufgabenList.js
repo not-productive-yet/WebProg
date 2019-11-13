@@ -26,13 +26,13 @@ export async function loadAufgaben() {
         "</div>" +
         " tage bis fällig" +
         "<div id='buttons'>" +
-        '<button type="button" class="saveAndBack" class="button" class="removeAufgaben" id=""' +
+        '<button type="button" class="saveAndBack" class="button" class="removeAufgaben" id="remove"' +
         i +
         '">x</button>' +
         " " +
-        '<a href="" data-navigo><button type="button" class="saveAndBack" class="button" class="editAufgabe" id="' +
+        '<a href="" data-navigo><button type="button" class="saveAndBack" class="button" class="editAufgabe" id="edit"' +
         i +
-        '">Edit-Aufgabe</button></a>' +
+        '">BEARBEITEN</button></a>' +
         " " +
         "</div>" +
         "</div>"+
