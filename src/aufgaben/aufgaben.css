@@ -94,6 +94,16 @@
   cursor: pointer;
 }
 
+#anzahlTodo {
+  color: var(--dark-green-color);
+  font-weight: bold;
+  margin-left: 1080px;
+  margin-top: -45px;
+  height: 20px;
+  width: 400px;
+  font-size: 13pt;
+}
+
 #addAufgabe {
   margin-left: -400pt;
 }

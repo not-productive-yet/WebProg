@@ -4,7 +4,6 @@ export async function loadAufgaben() {
   let aufgaben = new Database.Aufgaben();
 
   var elements = await aufgaben.getAll();
-  console.log(elements);
   var html = "<ul class='entries' id='aufgabenEntries'>";
   if (elements.length == 0) {
     html += "<p id='leer'> NOCH KEINE AUFGABEN VORHANDEN </p>";
@@ -44,6 +43,8 @@ export async function loadAufgaben() {
     }
   }
   document.getElementById("aufgabenList").innerHTML = html;
+  var content = "<p> Du hast noch " + elements.length + " Aufgaben</p>";
+  document.getElementById("anzahlTodo").innerHTML = content;
 }
 
 export async function addAufgabe() {

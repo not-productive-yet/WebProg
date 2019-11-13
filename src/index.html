@@ -34,17 +34,17 @@
       <main>
         <ul id="fächerList"></ul>
         <button
-            type="button"
-            class="add"
-            id="addFach"
-            href="/neuesFach"
-            data-navigo
-            >
-            <div class="circle" id="addNewButtonFächer">
-                <span class="icon arrow" />
-            </div>
-            <p class="button-text">Add New</p>
-            </button>
+          type="button"
+          class="add"
+          id="addFach"
+          href="/neuesFach"
+          data-navigo
+        >
+          <div class="circle" id="addNewButtonFächer">
+            <span class="icon arrow" />
+          </div>
+          <p class="button-text">Add New</p>
+        </button>
       </main>
     </section>
 
@@ -52,6 +52,7 @@
       <header></header>
 
       <main>
+        <div id="anzahlTodo"></div>
         <ul id="aufgabenList"></ul>
         <button
           type="button"
@@ -71,27 +72,27 @@
     <section id="neueAufgabe" class="hidden">
       <header></header>
 
-    <main>
-        <h3 id='überschriftNeueAufgabe'>Neue Aufgabe:</h3>
+      <main>
+        <h3 id="überschriftNeueAufgabe">Neue Aufgabe:</h3>
         <div id="inputsAufgabe">
           <input id="inputFach" placeholder="Fach" type="text" />
           <input id="inputTodo" placeholder="Aufgabe" type="text" />
           <input id="inputTage" placeholder="Tage bis fällig" type="text" />
         </div>
         <div id="buttonsNeueAufgabe">
-            <button
-                type="button"
-                class="saveAndBack"
-                id="zurück"
-                class="button"
-                href="/Aufgaben"
-                data-navigo
-                >
-                Zurück<i class="fa fa-home"></i>
-            </button>
-            <button type="button" class="saveAndBack" id="saveAufgabe">
-                Speichern <i class="fa fa-folder"></i>
-            </button>
+          <button
+            type="button"
+            class="saveAndBack"
+            id="zurück"
+            class="button"
+            href="/Aufgaben"
+            data-navigo
+          >
+            Zurück<i class="fa fa-home"></i>
+          </button>
+          <button type="button" class="saveAndBack" id="saveAufgabe">
+            Speichern <i class="fa fa-folder"></i>
+          </button>
         </div>
       </main>
     </section>
@@ -100,7 +101,7 @@
       <header></header>
 
       <main>
-        <h3 id='überschriftNeuesFach'>Neues Fach:</h3>
+        <h3 id="überschriftNeuesFach">Neues Fach:</h3>
         <div id="inputsFächer">
           <input id="inputFach" placeholder="Fach" type="text" />
           <input id="inputDozent" placeholder="Dozent" type="text" />
@@ -109,19 +110,24 @@
           <input id="inputNotiz" placeholder="Notiz" type="text" />
         </div>
         <div id="buttonsNeuesFach">
-            <button
-                id="backToFächer"
-                type="button"
-                class="saveAndBack"
-                class="button"
-                href="/fächer"
-                data-navigo
-                >
-                Zurück <i class="fa fa-home" />
-            </button>
-            <button id="saveFach" type="button" class="saveAndBack" class="button">
-                Speichern <i class="fa fa-folder" />
-            </button>
+          <button
+            id="backToFächer"
+            type="button"
+            class="saveAndBack"
+            class="button"
+            href="/fächer"
+            data-navigo
+          >
+            Zurück <i class="fa fa-home" />
+          </button>
+          <button
+            id="saveFach"
+            type="button"
+            class="saveAndBack"
+            class="button"
+          >
+            Speichern <i class="fa fa-folder" />
+          </button>
         </div>
       </main>
     </section>
