@@ -67,4 +67,5 @@ export async function addFach() {
   ]);
 
   loadFächer();
+  alert("Ihre Eingabe wurde erfolgreich gespeichert.");
 }

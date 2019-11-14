@@ -62,6 +62,7 @@ export async function addAufgabe() {
   ]);
 
   loadAufgaben();
+  alert("Ihre Eingabe wurde erfolgreich gespeichert.");
 }
 
 async function remove() {
