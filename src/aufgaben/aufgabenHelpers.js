@@ -35,15 +35,15 @@ export function generateList(elements, html) {
       "<div id='buttons'>" +
       '<button type="button" class="removeAufgaben" id="' +
       elements[i].id +
-      '">löschen</button>' +
+      '">🗑️</button>' +
       " " +
       '<button type="button" class="update" id= "' +
       elements[i].id +
-      '"> aktualisieren</button>' +
+      '"> 💾 </button>' +
       " " +
       '<button type="button" class="erledigt" id= "' +
       elements[i].id +
-      '"> durchstreichen </button>' +
+      '"> ➖  </button>' +
       " " +
       "</div>" +
       "</div>" +
@@ -52,7 +52,7 @@ export function generateList(elements, html) {
   html += "</ul>";
 
   document.getElementById("aufgabenList").innerHTML = html;
-  var content = "<p> Du hast noch " + elements.length + " Aufgaben</p>";
+  var content = "<p> Du hast noch " + elements.length + " Aufgabe(n)</p>";
   document.getElementById("anzahlTodo").innerHTML = content;
   console.log("liste neu geladen");
 }
@@ -75,19 +75,28 @@ export async function addAufgabe() {
   alert("Eingabe erfolgreich gespeichert.");
 }
 
-export async function markErledigt(id) {
-  console.log(id);
+var lastClick = 0;
+var delay = 20;
+
+export function markErledigt(id) {
+  //ohne dieses if ruft er es zu oft auf
+  if (lastClick >= Date.now() - delay) return;
+  lastClick = Date.now();
+
   if (document.getElementById("kasten" + id).className == "kastenInnen") {
     document.getElementById("kasten" + id).className = "kastenInnenErledigt";
-  } else document.getElementById("kasten" + id).className = "kastenInnen";
+    console.log("geändert");
+  } else {
+    document.getElementById("kasten" + id).className = "kastenInnen";
+    console.log("geändert2");
+  }
+  return console.log("done");
 }
 
 export async function saveEdit(id) {
   var convertedId = +id;
-  console.log(id);
   let aufgaben = new Database.Aufgaben();
   var element = await aufgaben.getById(convertedId);
-  console.log(element);
   let section = document.getElementById("kasten" + id).cloneNode(true);
   var newFach = section.querySelector("#fach").innerHTML;
   var newTodo = section.querySelector("#todo").innerHTML;

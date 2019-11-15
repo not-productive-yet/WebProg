@@ -71,7 +71,7 @@ main {
 button {
   border: none;
   color: white;
-  background-color: #608078;
+  background-color: var(--dark-green-less-transparent-color);
   cursor: pointer;
 }
 button.delete {
@@ -172,9 +172,6 @@ button:hover .circle .icon.arrow {
 }
 button:hover .button-text {
   color: #fff;
-}
-button:hover {
-  color: black;
 }
 
 .hidden {
