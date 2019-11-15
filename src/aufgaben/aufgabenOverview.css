@@ -34,7 +34,7 @@
 }
 
 .kastenInnen {
-  font-size: 12pt;
+  font-size: 10pt;
   text-transform: uppercase;
   background-color: var(--dark-green-transparent-color);
   border: 2px solid var(--dark-green-color);
@@ -43,7 +43,7 @@
 }
 
 .kastenInnenErledigt {
-  font-size: 12pt;
+  font-size: 10pt;
   text-transform: uppercase;
   background-color: var(--dark-green-transparent-color);
   border: 2px solid var(--dark-green-color);
@@ -56,7 +56,7 @@
 #fach {
   padding: 10pt;
   background-color: var(--dark-green-less-transparent-color);
-  font-size: 17pt;
+  font-size: 16pt;
   font-weight: bold;
 }
 
@@ -70,7 +70,7 @@
   display: inline;
   padding: 10pt;
   font-style: italic;
-  font-size: 16pt;
+  font-size: 13pt;
 }
 
 #buttons {
