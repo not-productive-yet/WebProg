@@ -27,18 +27,30 @@
   width: 1400px;
 }
 
-#kastenAußen {
+.kastenAußen {
   margin: 15px;
   height: 200px;
   width: 400px;
 }
 
-#kastenInnen {
+.kastenInnen {
   font-size: 12pt;
   text-transform: uppercase;
   background-color: var(--dark-green-transparent-color);
   border: 2px solid var(--dark-green-color);
   height: 190px;
+  margin-top: 10px;
+}
+
+.kastenInnenErledigt {
+  font-size: 12pt;
+  text-transform: uppercase;
+  background-color: var(--dark-green-transparent-color);
+  border: 2px solid var(--dark-green-color);
+  height: 190px;
+  margin-top: 10px;
+  text-decoration: line-through;
+  color: grey;
 }
 
 #fach {
@@ -51,7 +63,7 @@
 #todo {
   border-top: 2px solid var(--dark-green-color);
   padding: 10pt;
-  font-size: 15pt;
+  font-size: 14pt;
 }
 
 #tageBisFällig {
@@ -76,20 +88,7 @@
   background-color: var(--nav-selected-color);
   cursor: pointer;
 }
-#kastenInnenFächer:hover {
-  border-color: white;
-  cursor: pointer;
-}
-#kastenInnenFächer:hover {
-  border-color: white;
-  cursor: pointer;
-}
-#kastenInnenFächer:hover {
-  border-color: white;
-  cursor: pointer;
-}
-
-#kastenInnen:hover {
+.kastenInnen:hover {
   border-color: white;
   cursor: pointer;
 }

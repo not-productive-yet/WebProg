@@ -13,12 +13,15 @@ class Aufgaben {
     return database.aufgaben.add(aufgabe);
   }
 
-  async update(aufgabe) {
-    return database.aufgaben.put(aufgabe);
+  async update(id, aufgabe) {
+    return database.aufgaben.update(id, aufgabe);
   }
 
   async delete(id) {
-    return database.aufgaben.delete(id);
+    return database.aufgaben
+      .where("id")
+      .equals(id)
+      .delete();
   }
 
   async clear() {
@@ -26,7 +29,10 @@ class Aufgaben {
   }
 
   async getById(id) {
-    return database.aufgaben.get(id);
+    return database.aufgaben
+      .where("id")
+      .equals(id)
+      .toArray();
   }
 
   async getAll() {

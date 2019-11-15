@@ -1,10 +1,8 @@
 "use strict";
 
-import stylesheet from "./app.css";
-
 import Navigo from "navigo/lib/navigo.js";
 import Fächer from "./fächer/fächer.js";
-import Aufgaben from "./aufgaben/aufgaben.js";
+import Aufgaben from "./aufgaben/aufgabenOverview.js";
 import NeueAufgabe from "./aufgaben/neueAufgabe.js";
 import NeuesFach from "./fächer/neuesFach.js";
 import Designs from "./designs/designs.js";
@@ -71,21 +69,30 @@ export default class App {
     this._switchVisibleView(view);
   }
 
-  _switchVisibleView(view) {
+  showAufgabe(id) {
+    console.log("test ");
+    let view = new Aufgabe(this, id);
+    this._switchVisibleView(view);
+  }
+
+  async _switchVisibleView(view) {
     let newUrl = this._router.lastRouteResolved().url;
     let goon = () => {
       this._router.navigate(newUrl + "?goon");
     };
 
-    if (this._currentView && !this._currentView.onLeave(goon)) {
-      this._navAborted = true;
-      return false;
-    }
+    if (this._currentView) {
+      let goonAllowed = await this._currentView.onLeave(goon);
 
+      if (!goonAllowed) {
+        this._navAborted = true;
+        return false;
+      }
+    }
     document.title = `${this._title} – ${view.title}`;
 
     this._currentView = view;
-    this._switchVisibleContent(view.onShow());
+    this._switchVisibleContent(await view.onShow());
     return true;
   }
 

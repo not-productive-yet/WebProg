@@ -4,7 +4,6 @@ export async function loadFächer() {
 
   var elements = await fächer.getAll();
 
-  console.log(elements);
   var html = "<ul class='entries' id='fächerEntries'>";
   if (elements.length == 0) {
     html += "<p id='leer'> NOCH KEINE AUFGABEN VORHANDEN </p>";
