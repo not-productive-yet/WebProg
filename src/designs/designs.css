@@ -1,9 +1,42 @@
+@import url("../themes.css");
+
 .designs main {
   color: white;
+}
+/* webkit geht nur in chrome */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fächer-green-color);
 }
 
 .designs #designNav {
   background-color: rgba(121, 148, 141);
   cursor: pointer;
   color: black;
+}
+
+#überschriftDesign{
+    margin-left: 20pt;
+    margin-top: 20pt;
+    margin-bottom: 10pt;
+}
+#buttonsDesign{
+    margin-left: 20pt;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+}
+
+#dunkel{
+    margin: 5pt;
+}
+
+#hell{
+    margin: 5pt;
 }
