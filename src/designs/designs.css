@@ -17,9 +17,9 @@
 }
 
 .designs #designNav {
-  background-color: rgba(121, 148, 141);
+  background-color: var(--nav-selected-color);
   cursor: pointer;
-  color: black;
+  color: var(--schrift-color);
 }
 
 #überschriftDesign{
@@ -36,7 +36,9 @@
 #dunkel{
     margin: 5pt;
 }
-
 #hell{
+    margin: 5pt;
+}
+#normal{
     margin: 5pt;
 }

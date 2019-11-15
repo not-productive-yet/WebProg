@@ -1,5 +1,4 @@
 html {
-  --dark-green-color: rgb(33, 51, 40);
   --dark-green-color: rgb(55, 74, 69, 0.8);
   --dark-green-transparent-color: rgba(121, 148, 141, 0.7);
   --dark-green-less-transparent-color: rgba(121, 148, 141, 0.9);
@@ -7,4 +6,5 @@ html {
   --nav-selected-color: rgba(119, 149, 145);
   --fächer-green-color: rgb(94, 123, 119, 0.7);
   --fächer-dark-green-color: rgba(70, 98, 95);
+  --schrift-color: rgba(255, 255, 255);
 }

@@ -87,6 +87,7 @@
 .aufgaben #aufgabenNav {
   background-color: var(--nav-selected-color);
   cursor: pointer;
+  color: var(--schrift-color);
 }
 .kastenInnen:hover {
   border-color: white;

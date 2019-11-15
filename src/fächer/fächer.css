@@ -16,6 +16,11 @@
 ::-webkit-scrollbar-thumb {
   background: var(--fächer-green-color);
 }
+.fächer #fächerNav {
+  background-color: var(--nav-selected-color);
+  cursor: pointer;
+  color: var(--schrift-color);
+}
 
 #fächerEntries {
   display: inline-grid;
