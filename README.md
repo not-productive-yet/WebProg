@@ -1,10 +1,15 @@
-# WebProg
+# Web-Programmierung
 
-Eine Lernplan Browser-App.
+Einen Lernplan als Browser-App.
 
-- 3 Seiten
-  . Eine Todo Liste
-  Todos können angeschaut, hinzugefügt und entfernt werden
-  . Eine Fächer Liste
-  Fächer können angeschaut, hinzugefügt und entfernt werden
-  . Kalender (?)
+Die Browser-App besitzt drei unterschiedliche Themen-Seiten.
+    - Aufgaben-Seite: Auf dieser Seite werden alle noch zu bearbeiteten Aufgaben dargestellt. Des Weiteren kann hier über die Seite eine Aufgabe aktualisiert, bearbeitet und gelöscht werden.
+    - Wenn eine neue Aufgabe erstellt werden möchte, gelangt man über den Button "ADD NEW" auf eine neue Seite.
+
+    - Fächer-Seite: Auf dieser Seite werden alle Fächer dargestellt, bei denen man eine Klausur, bzw. eine Abgabe hat. Des Weiteren kann hier über die Seite ein Fach aktualisiert, bearbeitet und gelöscht werden.
+    - Über eine weitere Seite können neue Fächer hinzugefügt, bearbeitet und entfernt werden.
+
+    - Design-Seite: Auf dieser Seite kann das Design der Seite geändert werden. Hier kann man das Hintergrundbild und die Farben ändern.
+
+
+- TODO: Der Code muss über ein README-File so dokumentiert sein, dass wir ihn bei der Bewer- tung auf unseren eigenen     Rechnern laufen lassen können.

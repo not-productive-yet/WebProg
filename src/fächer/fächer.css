@@ -63,14 +63,14 @@
 
 #email {
   padding-left: 10pt;
-  padding-top: 2.5pt;
-  padding-bottom: 5pt;
+  padding-top: 5pt;
+  padding-bottom: 10pt;
   border-bottom: 2px solid var(--dark-green-color);
 }
 
 #klausurDatum {
   padding-top: 10pt;
-  padding-bottom: 2.5pt;
+  padding-bottom: 5pt;
   padding-left: 10pt;
 }
 
