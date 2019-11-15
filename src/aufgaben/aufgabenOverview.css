@@ -59,23 +59,52 @@
   font-size: 16pt;
   font-weight: bold;
 }
+.kastenInnen #fach:hover,
+.kastenInnen #todo:hover,
+.kastenInnen #tageBisFällig:hover {
+  background-color: var(--dark-green-transparent-color-hover-medium);
+  cursor: pointer;
+}
 
 #todo {
   border-top: 2px solid var(--dark-green-color);
   padding: 10pt;
-  font-size: 14pt;
+  font-size: 15pt;
+  text-transform: lowercase;
 }
 
 #tageBisFällig {
   display: inline;
   padding: 10pt;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 13pt;
 }
 
 #buttons {
-  padding-top: 20pt;
-  padding-bottom: 5pt;
+  padding-top: 10pt;
+  display: none;
+}
+
+.kastenInnenErledigt .update {
+  color: grey;
+  text-decoration: line-through;
+  cursor: auto;
+}
+
+.removeAufgaben:hover,
+.kastenInnen .update:hover,
+.erledigt:hover {
+  background-color: var(--dark-green-transparent-color-hover-medium);
+  color: white;
+}
+
+.removeAufgaben,
+.update,
+.erledigt {
+  width: 80pt;
+  margin: 3pt;
+  height: 25pt;
+  border: 1px solid var(--dark-green-color);
 }
 
 #addNewButtonAufgaben {
@@ -90,8 +119,15 @@
   color: var(--schrift-color);
 }
 .kastenInnen:hover {
-  border-color: white;
-  cursor: pointer;
+  border-color: var(--dark-green-transparent-color-hover-light);
+}
+
+.kastenInnen:hover #buttons {
+  display: block;
+}
+
+.kastenInnenErledigt:hover #buttons {
+  display: block;
 }
 
 #anzahlTodo {
