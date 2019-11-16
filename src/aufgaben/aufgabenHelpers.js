@@ -15,10 +15,22 @@ export async function loadAufgaben() {
 }
 
 export function generateList(elements, html) {
+  let doneCount = 0;
   for (var i = 0; i < elements.length; i++) {
+    let x = "";
+
+    if (elements[i].done == "true") {
+      x = "kastenInnenErledigt";
+      doneCount++;
+    } else {
+      x = "kastenInnen";
+    }
+
     html +=
       "<li class='kastenAußen'>" +
-      "<div class='kastenInnen'id='kasten" +
+      "<div class='" +
+      x +
+      "'id='kasten" +
       elements[i].id +
       "'>" +
       "<div id='fach' contenteditable='true'>" +
@@ -52,9 +64,10 @@ export function generateList(elements, html) {
   html += "</ul>";
 
   document.getElementById("aufgabenList").innerHTML = html;
-  var content = "<p> Du hast noch " + elements.length + " Aufgabe(n)</p>";
+
+  var content =
+    "<p>" + doneCount + "/" + elements.length + " Aufgabe(n) erledigt</p>";
   document.getElementById("anzahlTodo").innerHTML = content;
-  console.log("liste neu geladen");
 }
 
 export async function addAufgabe() {
@@ -63,11 +76,17 @@ export async function addAufgabe() {
   var newTodo = document.getElementById("inputTodo").value;
   var newTage = document.getElementById("inputTage").value;
 
+  if (newFach == "" || newTodo == "" || newTage == "") {
+    alert("Eingaben unvollständig!");
+    return;
+  }
+
   await Promise.all([
     aufgaben.saveNew({
       fach: newFach,
       todo: newTodo,
-      tageBisFällig: newTage
+      tageBisFällig: newTage,
+      done: "false"
     })
   ]);
 
@@ -78,25 +97,53 @@ export async function addAufgabe() {
 var lastClick = 0;
 var delay = 20;
 
-export function markErledigt(id) {
-  //ohne dieses if ruft er es zu oft auf
+export async function markErledigt(id) {
+  //ohne ruft er es zu oft auf
   if (lastClick >= Date.now() - delay) return;
   lastClick = Date.now();
 
-  if (document.getElementById("kasten" + id).className == "kastenInnen") {
+  var convertedId = +id;
+  let aufgaben = new Database.Aufgaben();
+  let section = document.getElementById("kasten" + id);
+  var element = await aufgaben.getById(convertedId);
+
+  if (section.className == "kastenInnen") {
     document.getElementById("kasten" + id).className = "kastenInnenErledigt";
-    console.log("geändert");
+    section.querySelector(".update").disabled = true;
+    document.getElementById("snackbar").innerHTML = "Aufgabe erledigt";
+
+    await Promise.all([
+      aufgaben.update(convertedId, {
+        done: "true"
+      })
+    ]);
+
+    document.getElementById("snackbar").className = "show";
+    setTimeout(() => {
+      document.getElementById("snackbar").className = "hide";
+    }, 3000);
   } else {
     document.getElementById("kasten" + id).className = "kastenInnen";
-    console.log("geändert2");
+
+    await Promise.all([
+      aufgaben.update(convertedId, {
+        done: "false"
+      })
+    ]);
+
+    section.querySelector(".update").disabled = false;
   }
-  return console.log("done");
+
+  loadAufgaben();
 }
 
 export async function saveEdit(id) {
+  //ohne ruft er es zu oft auf
+  if (lastClick >= Date.now() - delay) return;
+  lastClick = Date.now();
+
   var convertedId = +id;
   let aufgaben = new Database.Aufgaben();
-  var element = await aufgaben.getById(convertedId);
   let section = document.getElementById("kasten" + id).cloneNode(true);
   var newFach = section.querySelector("#fach").innerHTML;
   var newTodo = section.querySelector("#todo").innerHTML;
@@ -109,14 +156,24 @@ export async function saveEdit(id) {
       tageBisFällig: newTage
     })
   ]);
-  element = await aufgaben.getById(convertedId);
-  alert("Änderungen erfolgreich gespeichert.");
+
+  document.getElementById("snackbar").innerHTML = "Änderungen gespeichert";
+  document.getElementById("snackbar").className = "show";
+
+  setTimeout(() => {
+    document.getElementById("snackbar").className = "hide";
+  }, 3000);
 }
 
 export async function remove(id) {
   var convertedId = +id;
   let aufgaben = new Database.Aufgaben();
   await Promise.all([aufgaben.delete(convertedId)]);
-  alert("Aufgabe erfolgreich gelöscht.");
+  document.getElementById("snackbar").innerHTML = "Aufgabe gelöscht";
+  document.getElementById("snackbar").className = "show";
+
+  setTimeout(() => {
+    document.getElementById("snackbar").className = "hide";
+  }, 3000);
   loadAufgaben();
 }
