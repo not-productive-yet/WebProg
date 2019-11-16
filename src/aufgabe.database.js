@@ -5,7 +5,7 @@ import Dexie from "dexie/dist/dexie.js";
 let database = new Dexie("Datenbank1");
 
 database.version(1).stores({
-  aufgaben: "++id, fach, todo, tageBisFällig"
+  aufgaben: "++id, fach, todo, tageBisFällig. done"
 });
 
 class Aufgaben {

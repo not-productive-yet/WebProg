@@ -25,6 +25,7 @@
   height: 700px;
   position: relative;
   width: 1400px;
+  margin-top: 30pt;
 }
 
 .kastenAußen {
@@ -107,6 +108,10 @@
   border: 1px solid var(--dark-green-color);
 }
 
+.kastenInnenErledigt .update {
+  background-color: grey;
+}
+
 #addNewButtonAufgaben {
   background-color: var(--dark-green-transparent-color);
   border: 2px solid var(--dark-green-color);
@@ -133,7 +138,7 @@
 #anzahlTodo {
   color: var(--dark-green-color);
   font-weight: bold;
-  margin-left: 1080px;
+  margin-left: 1060px;
   margin-top: -45px;
   height: 20px;
   width: 400px;
@@ -142,4 +147,46 @@
 
 #addAufgabe {
   margin-left: -400pt;
+  margin-top: -50pt;
+}
+
+#snackbar {
+  background-color: rgba(123, 94, 80, 0.7);
+  color: white;
+  width: 280pt;
+  height: 30pt;
+  margin-top: -75pt;
+  border-radius: 1em;
+  padding-top: 15pt;
+  margin-left: 405pt;
+  text-transform: uppercase;
+  visibility: hidden;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
