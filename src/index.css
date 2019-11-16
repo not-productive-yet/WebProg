@@ -182,6 +182,12 @@ button.gelb{
   background: url("./images/Gelb.JPG");
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
+  border-bottom: 2px solid var(--dark-green-color);
+  border-top: 2px solid var(--dark-green-color);
+  border-left: 2px solid var(--dark-green-color);
+  border-right: 2px solid var(--dark-green-color);
+  border-radius: 0.5em;
 
 }
 button.rot{
@@ -190,6 +196,12 @@ button.rot{
   background: url("./images/Rot.JPG");
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
+  border-bottom: 2px solid var(--dark-green-color);
+  border-top: 2px solid var(--dark-green-color);
+  border-left: 2px solid var(--dark-green-color);
+  border-right: 2px solid var(--dark-green-color);
+  border-radius: 0.5em;
 }
 button.braun{
   width: 250px;
@@ -197,6 +209,12 @@ button.braun{
   background: url("./images/Braun.JPG");
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
+  border-bottom: 2px solid var(--dark-green-color);
+  border-top: 2px solid var(--dark-green-color);
+  border-left: 2px solid var(--dark-green-color);
+  border-right: 2px solid var(--dark-green-color);
+  border-radius: 0.5em;
 
 }
 
