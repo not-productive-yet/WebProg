@@ -76,6 +76,7 @@ button {
   background-color: var(--dark-green-less-transparent-color);
   cursor: pointer;
 }
+
 button.delete {
   background-color: var(--dark-green-less-transparent-color);
   color: white;
@@ -142,7 +143,7 @@ button.add .circle .icon.arrow {
 button.add .circle .icon.arrow::before {
   position: absolute;
   content: "";
-  top: -0.25rem;
+  top: -0.3rem;
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
@@ -174,6 +175,29 @@ button:hover .circle .icon.arrow {
 }
 button:hover .button-text {
   color: #fff;
+}
+button.gelb{
+  width: 250px;
+  height: 250px;
+  background: url("./images/Gelb.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+button.rot{
+  width: 250px;
+  height: 250px;
+  background: url("./images/Rot.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button.braun{
+  width: 250px;
+  height: 250px;
+  background: url("./images/Braun.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .hidden {
