@@ -22,7 +22,7 @@ export default class Fächer {
                 var id = event.target.id;
                 remove(id);
             }
-            if (event.target.classList.contains("update")) {
+            if (event.target.classList.contains("updateFach")) {
                 var id = event.target.id;
                 saveEdit(id);
             }

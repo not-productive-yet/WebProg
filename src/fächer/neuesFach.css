@@ -32,10 +32,19 @@
     font-size: 15pt;
 }
 
-#buttonsNeuesFach{
-    margin-left: 20pt;
-    margin-top: 20pt;
+#buttonsNeuesFach button{
+    width: 90pt;
+    border: 1px solid var(--dark-green-color);
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-top: 10pt;
     margin-bottom: 20pt;
+    margin-left: 20pt;
+}
+
+#buttonsNeuesFach button:hover{
+    background-color: var(--dark-green-color);
+    color: white;
 }
 
 #backToFächer{
@@ -52,7 +61,7 @@
 }
 
 .neuesFach #fächerNav {
-  background-color: var(--nav-selected-color);
+  background-color: var(--dark-green-color);
   cursor: pointer;
-  color: black;
+  color: white;
 }

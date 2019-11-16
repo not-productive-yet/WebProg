@@ -52,11 +52,11 @@ export function generateList(elements, html){
             "<div id='buttonFächer'>" +
             '<button type="button" class="removeFach" id="' +
             elements[i].id +
-            '">löschen</button>' +
+            '">🗑️</button>' +
             " " +
-            '<button type="button" class="update" id= "' +
+            '<button type="button" class="updateFach" id= "' +
             elements[i].id +
-            '"> aktualisieren</button>' +
+            '"> 💾</button>' +
             " " +
             "</div>" +
             "</div>" +
@@ -77,6 +77,14 @@ export async function addFach() {
     var newKlausurTermin = document.getElementById("inputKlausur").value;
     var newNotiz = document.getElementById("inputNotiz").value;
 
+    if (newFach == "" || newDozent == "" || newEmail == "") {
+        if(newKlausurTermin == "" || newNotiz == ""){
+            alert("Ihre Eingabe ist unvollständig! Bitte geben Sie bei allen Feldern etwas an.");
+            return;
+        }
+        return;
+    }
+
     await Promise.all([
         fächer.saveNew({
             fachD: newFach,
@@ -91,7 +99,14 @@ export async function addFach() {
     alert("Ihre Eingabe wurde erfolgreich gespeichert.");
 }
 
+var lastClick = 0;
+var delay = 20;
+
 export async function saveEdit(id) {
+
+    if(lastClick >= Date.now() - delay) return;
+    lastClick = Date.now();
+
     var convertedId = +id;
     console.log(id);
     let fächer = new Database.Fächer();
@@ -119,6 +134,10 @@ export async function saveEdit(id) {
 }
 
 export async function remove(id){
+
+    if(lastClick >= Date.now() - delay) return;
+    lastClick = Date.now();
+
     var convertedId = +id;
     let fächer = new Database.Fächer();
     await Promise.all([fächer.delete(convertedId)]);
