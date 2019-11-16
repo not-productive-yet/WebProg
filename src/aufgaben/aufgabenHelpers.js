@@ -76,6 +76,11 @@ export async function addAufgabe() {
   var newTodo = document.getElementById("inputTodo").value;
   var newTage = document.getElementById("inputTage").value;
 
+  if (newFach == "" || newTodo == "" || newTage == "") {
+    alert("Eingaben unvollständig!");
+    return;
+  }
+
   await Promise.all([
     aufgaben.saveNew({
       fach: newFach,
