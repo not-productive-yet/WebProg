@@ -2,6 +2,7 @@
 
 .designs main {
   color: white;
+  margin-left: 600px;
 }
 /* webkit geht nur in chrome */
 ::-webkit-scrollbar {
@@ -25,20 +26,18 @@
 #überschriftDesign{
     margin-left: 20pt;
     margin-top: 20pt;
-    margin-bottom: 10pt;
+    margin-bottom: 20pt;
 }
 #buttonsDesign{
     margin-left: 20pt;
-    margin-top: 20pt;
     margin-bottom: 20pt;
 }
 
 #dunkel{
-    margin: 5pt;
+    margin-right: 20pt;
 }
 #hell{
-    margin: 5pt;
+    margin-right: 20pt;
 }
 #normal{
-    margin: 5pt;
 }
