@@ -49,8 +49,8 @@ export default class App {
     this._switchVisibleView(view);
   }
 
-  showFächer() {
-    let view = new Fächer(this);
+  showFächer(id) {
+    let view = new Fächer(this, id);
     this._switchVisibleView(view);
   }
 

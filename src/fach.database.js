@@ -13,12 +13,15 @@ class Fächer {
     return database.fächer.add(fach);
   }
 
-  async update(fach) {
-    return database.fächer.put(fach);
+  async update(id, fach) {
+    return database.fächer.update(id, fach);
   }
 
   async delete(id) {
-    return database.fächer.delete(id);
+    return database.fächer
+        .where("id")
+        .equals(id)
+        .delete();
   }
 
   async clear() {
@@ -26,7 +29,10 @@ class Fächer {
   }
 
   async getById(id) {
-    return database.fächer.get(id);
+    return database.fächer
+        .where("id")
+        .equals(id)
+        .toArray();
   }
 
   async getAll() {
