@@ -25,6 +25,7 @@
   height: 700px;
   position: relative;
   width: 1400px;
+  margin-top: 30pt;
 }
 
 .kastenAußen {
@@ -59,23 +60,56 @@
   font-size: 16pt;
   font-weight: bold;
 }
+.kastenInnen #fach:hover,
+.kastenInnen #todo:hover,
+.kastenInnen #tageBisFällig:hover {
+  background-color: var(--dark-green-transparent-color-hover-medium);
+  cursor: pointer;
+}
 
 #todo {
   border-top: 2px solid var(--dark-green-color);
   padding: 10pt;
-  font-size: 14pt;
+  font-size: 15pt;
+  text-transform: lowercase;
 }
 
 #tageBisFällig {
   display: inline;
   padding: 10pt;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 13pt;
 }
 
 #buttons {
-  padding-top: 20pt;
-  padding-bottom: 5pt;
+  padding-top: 10pt;
+  display: none;
+}
+
+.kastenInnenErledigt .update {
+  color: grey;
+  text-decoration: line-through;
+  cursor: auto;
+}
+
+.removeAufgaben:hover,
+.kastenInnen .update:hover,
+.erledigt:hover {
+  background-color: var(--dark-green-transparent-color-hover-medium);
+  color: white;
+}
+
+.removeAufgaben,
+.update,
+.erledigt {
+  width: 80pt;
+  margin: 3pt;
+  height: 25pt;
+  border: 1px solid var(--dark-green-color);
+}
+
+.kastenInnenErledigt .update {
+  background-color: grey;
 }
 
 #addNewButtonAufgaben {
@@ -87,16 +121,24 @@
 .aufgaben #aufgabenNav {
   background-color: var(--nav-selected-color);
   cursor: pointer;
+  color: var(--schrift-color);
 }
 .kastenInnen:hover {
-  border-color: white;
-  cursor: pointer;
+  border-color: var(--dark-green-transparent-color-hover-light);
+}
+
+.kastenInnen:hover #buttons {
+  display: block;
+}
+
+.kastenInnenErledigt:hover #buttons {
+  display: block;
 }
 
 #anzahlTodo {
   color: var(--dark-green-color);
   font-weight: bold;
-  margin-left: 1080px;
+  margin-left: 1060px;
   margin-top: -45px;
   height: 20px;
   width: 400px;
@@ -105,4 +147,46 @@
 
 #addAufgabe {
   margin-left: -400pt;
+  margin-top: 0pt;
+}
+
+#snackbar {
+  background-color: rgba(123, 94, 80, 0.7);
+  color: white;
+  width: 280pt;
+  height: 30pt;
+  margin-top: -75pt;
+  border-radius: 1em;
+  padding-top: 15pt;
+  margin-left: 405pt;
+  text-transform: uppercase;
+  visibility: hidden;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }

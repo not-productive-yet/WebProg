@@ -1,48 +1,53 @@
 .neueAufgabe main {
-    background-color: var(--dark-green-transparent-color);
-    border: 2px solid var(--dark-green-color);
-    color: white;
-    text-align: center;
-    margin-left: 630px;
-    width: 360pt;
-    height: auto;
-}
-
-#überschriftNeueAufgabe{
+  background-color: var(--dark-green-transparent-color);
+  border: 2px solid var(--dark-green-color);
+  color: white;
+  text-align: center;
+  margin-left: 630pt;
+  width: 360pt;
+  height: auto;
+  margin-top: 50pt;
 }
 
 #inputsAufgabe input {
-    text-align: center;
-    width: 300pt;
-    background-color: transparent;
-    border-bottom: 2px solid var(--dark-green-color);
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    margin-top: 10pt;
-    margin-bottom: 10pt;
-    padding-top: 10pt;
-    padding-bottom: 10pt;
-    color: white;
-    font-size: 15pt;
+  text-align: center;
+  width: 300pt;
+  background-color: transparent;
+  border-bottom: 2px solid var(--dark-green-color);
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  margin-top: 10pt;
+  margin-bottom: 10pt;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+  color: white;
+  font-size: 15pt;
 }
 
-#buttonsNeueAufgabe{
-    margin-top: 15pt;
-    margin-bottom: 20pt;
+#buttonsNeueAufgabe {
+  margin-top: 15pt;
+  margin-bottom: 20pt;
+}
+#buttonsNeueAufgabe button {
+  width: 90pt;
+  margin: 3pt;
+  height: 25pt;
+  border: 1px solid var(--dark-green-color);
+  border-radius: 0;
+  text-transform: uppercase;
+  margin-top: 20pt;
+  margin-bottom: 10pt;
 }
 
-#zurück{
-    margin: 5pt;
+#buttonsNeueAufgabe button:hover {
+  background-color: var(--dark-green-transparent-color-hover-medium);
+  color: white;
 }
 
-#saveAufgabe{
-    margin: 5pt;
-}
-
-::placeholder{
-    color: white;
-    opacity: 1;
+::placeholder {
+  color: white;
+  opacity: 1;
 }
 
 .neueAufgabe #aufgabenNav {
