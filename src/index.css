@@ -113,7 +113,7 @@ button.add {
   padding: 0;
   font-size: inherit;
   font-family: inherit;
-  width: 12rem;
+  width: 14rem;
   height: auto;
 }
 button.add .circle {
@@ -122,7 +122,6 @@ button.add .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  /*background-color: var(--dark-green-color);*/
   border-radius: 1.625rem;
 }
 button.add .circle .icon {
@@ -215,8 +214,16 @@ button.braun{
   border-left: 2px solid var(--dark-green-color);
   border-right: 2px solid var(--dark-green-color);
   border-radius: 0.5em;
-
-}
+  }
+  button:hover.rot{
+    transform: scale(1.02);
+  }
+  button:hover.gelb{
+    transform: scale(1.02);
+  }
+  button:hover.braun{
+    transform: scale(1.02);
+  }
 
 .hidden {
   display: none;
