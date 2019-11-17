@@ -53,5 +53,4 @@
 .neueAufgabe #aufgabenNav {
   background-color: var(--nav-selected-color);
   cursor: pointer;
-  color: black;
 }

@@ -25,7 +25,7 @@
   height: 700px;
   position: relative;
   width: 1400px;
-  margin-top: 30pt;
+  margin-top: 10pt;
 }
 
 .kastenAußen {
@@ -146,7 +146,7 @@
 }
 
 #addAufgabe {
-  margin-left: -400pt;
+  margin-left: -370pt;
   margin-top: 0pt;
 }
 

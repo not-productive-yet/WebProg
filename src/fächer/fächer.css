@@ -5,148 +5,146 @@
   text-align: left;
 }
 #fächerEntries {
-    display: inline-grid;
-    grid-template-columns: 450px 450px;
-    margin-left: 150px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 650px;
-    position: relative;
-    width: 900px;
+  display: inline-grid;
+  grid-template-columns: 450px 450px;
+  margin-left: 150px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 650px;
+  position: relative;
+  width: 900px;
 }
 
 #fächerList {
-    margin-left: 25px;
-    margin-bottom: 25px;
+  margin-left: 25px;
+  margin-bottom: 25px;
 }
 
 .kastenAußenFächer {
-    margin: 15pt;
-    width: 400px;
-    height: 225px;
+  margin: 15pt;
 }
 
 .kastenInnenFächer {
-    font-size: 12pt;
-    text-transform: uppercase;
-    background-color: var(--dark-green-transparent-color);
-    border: 2px solid var(--dark-green-color);
+  font-size: 12pt;
+  text-transform: uppercase;
+  background-color: var(--dark-green-transparent-color);
+  border: 2px solid var(--dark-green-color);
 }
 
 #fachD {
-    padding: 10pt;
-    border-bottom: 2px solid var(--dark-green-color);
-    font-size: 16pt;
-    font-weight: bold;
-    background-color: var(--dark-green-color);
+  padding: 10pt;
+  border-bottom: 2px solid var(--dark-green-color);
+  font-size: 16pt;
+  font-weight: bold;
+  background-color: var(--dark-green-color);
 }
 
-#dozentBlock{
-    padding-top: 15pt;
-    padding-left: 10pt;
+#dozentBlock {
+  padding-top: 15pt;
+  padding-left: 10pt;
 }
 
-#dozentÜber{
-    font-size: 14pt;
-    color: var(--dark-green-color);
-    font-weight: bold;
+#dozentÜber {
+  font-size: 14pt;
+  color: var(--dark-green-color);
+  font-weight: bold;
 }
 
 #dozent {
-    display: inline;
+  display: inline;
 }
 
-#emailBlock{
-    padding-top: 5pt;
-    padding-left: 10pt;
+#emailBlock {
+  padding-top: 5pt;
+  padding-left: 10pt;
 }
 
-#emailÜber{
-    font-size: 14pt;
-    color: var(--dark-green-color);
-    font-weight: bold;
+#emailÜber {
+  font-size: 14pt;
+  color: var(--dark-green-color);
+  font-weight: bold;
 }
 
 #email {
-    display: inline;
+  display: inline;
 }
 
-#klausurDatumBlock{
-    padding-top: 15pt;
-    padding-left: 10pt;
+#klausurDatumBlock {
+  padding-top: 15pt;
+  padding-left: 10pt;
 }
 
-#klausurDatumÜber{
-    font-size: 14pt;
-    color: var(--dark-green-color);
-    font-weight: bold;
+#klausurDatumÜber {
+  font-size: 14pt;
+  color: var(--dark-green-color);
+  font-weight: bold;
 }
 
 #klausurDatum {
-    display: inline;
+  display: inline;
 }
 
-#notizDBlock{
-    padding-top: 5pt;
-    padding-left: 10pt;
-    padding-bottom: 25pt;
+#notizDBlock {
+  padding-top: 5pt;
+  padding-left: 10pt;
+  padding-bottom: 25pt;
 }
 
-#notizDÜber{
-    font-size: 14pt;
-    color: var(--dark-green-color);
-    font-weight: bold;
+#notizDÜber {
+  font-size: 14pt;
+  color: var(--dark-green-color);
+  font-weight: bold;
 }
 
 #notizD {
-    display: inline;
+  display: inline;
 }
 
 #addFach {
-    margin-left: 260px;
-    margin-top: -1450px;
+  margin-left: 280px;
+  margin-top: -1450px;
 }
 
-#leer{
-    color: var(--dark-green-color);
+#leer {
+  color: var(--dark-green-color);
 }
 
 #addNewButtonFächer {
-    background-color: var(--dark-green-color);
-    border: 2px solid var(--dark-green-color);
+  background-color: var(--dark-green-color);
+  border: 2px solid var(--dark-green-color);
 }
 
 .updateFach,
-.removeFach{
-    width: 80pt;
-    height: 25pt;
-    background-color: var(--dark-green-color);
-    border: 2px solid var(--dark-green-color);
-    margin-bottom: 10pt;
-    margin-left: 10pt;
+.removeFach {
+  width: 80pt;
+  height: 25pt;
+  background-color: var(--dark-green-color);
+  border: 2px solid var(--dark-green-color);
+  margin-bottom: 10pt;
+  margin-left: 10pt;
 }
 
-.kastenInnenFächer #fachD:hover{
-    background-color: var(--dark-green-transparent-color);
-    cursor: pointer;
+.kastenInnenFächer #fachD:hover {
+  background-color: var(--dark-green-transparent-color);
+  cursor: pointer;
 }
 
 .kastenInnenFächer #dozent:hover,
 .kastenInnenFächer #email:hover,
 .kastenInnenFächer #klausurDatum:hover,
-.kastenInnenFächer #notizD:hover{
-    background-color: var(--dark-green-color);
-    cursor: pointer;
+.kastenInnenFächer #notizD:hover {
+  background-color: var(--dark-green-color);
+  cursor: pointer;
 }
 
 .updateFach:hover,
-.removeFach:hover{
-    background-color: var(--dark-green-transparent-color);
-    color: white;
+.removeFach:hover {
+  background-color: var(--dark-green-transparent-color);
+  color: white;
 }
 
 .fächer #fächerNav {
-    background-color: var(--dark-green-color);
-    cursor: pointer;
-    color: white;
+  background-color: var(--dark-green-color);
+  cursor: pointer;
+  color: white;
 }
