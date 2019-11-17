@@ -2,14 +2,18 @@
 
 Einen Lernplan als Browser-App.
 
+Die hier erstellte App bietet die Möglichkeit einen übersichtlichen Lernplan zu erstellen. Es können Fächer (Lernfächer) und Aufgaben übersichtlich angelegt und verwaltet werden.
+
+Zur Verwendung aller Funktionen ist eine Internetverbindung notwendig.
+Es wird empfehlen "Chrome" als Browser zu verwenden, da ein webkit eingebaut wurde, welches nur mit Chrome funktioniert.
+
+Starten Sie die App über die Console mit dem Command: npm start
+
 Die Browser-App besitzt drei unterschiedliche Themen-Seiten.
-    - Aufgaben-Seite: Auf dieser Seite werden alle noch zu bearbeiteten Aufgaben dargestellt. Des Weiteren kann hier über die Seite eine Aufgabe aktualisiert, bearbeitet und gelöscht werden.
-    - Wenn eine neue Aufgabe erstellt werden möchte, gelangt man über den Button "ADD NEW" auf eine neue Seite.
+    - Aufgaben-Seite: Auf dieser Seite werden alle noch zu bearbeiteten Aufgaben dargestellt. Des Weiteren kann über diese Seite eine Aufgabe aktualisiert(direkt bearbeiten und speichern), als erledigt gekennzeichnet(durchstreichen) und gelöscht werden.
+    - Wenn eine neue Aufgabe erstellt werden möchte, gelangt man über den Button "NEUE AUFGABE" auf eine neue Seite.
 
-    - Fächer-Seite: Auf dieser Seite werden alle Fächer dargestellt, bei denen man eine Klausur, bzw. eine Abgabe hat. Des Weiteren kann hier über die Seite ein Fach aktualisiert, bearbeitet und gelöscht werden.
-    - Über eine weitere Seite können neue Fächer hinzugefügt, bearbeitet und entfernt werden.
+    - Fächer-Seite: Auf dieser Seite werden alle Fächer dargestellt, bei denen man eine Klausur, bzw. eine Abgabe hat. Des Weiteren kann über diese Seite ein Fach aktualisiert(direkt bearbeiten und speichern) und gelöscht werden.
+    - Über eine weitere Seite, welche über den Button "NEUES FACH" erreichbar ist, können neue Fächer hinzugefügt und gespeichert werden.
 
-    - Design-Seite: Auf dieser Seite kann das Design der Seite geändert werden. Hier kann man das Hintergrundbild und die Farben ändern.
-
-
-- TODO: Der Code muss über ein README-File so dokumentiert sein, dass wir ihn bei der Bewer- tung auf unseren eigenen     Rechnern laufen lassen können.
+    - Design-Seite: Auf dieser Seite kann das Design der Seiten geändert werden. Hier kann sich zwischen drei voreingestellten Designs entschieden werden.

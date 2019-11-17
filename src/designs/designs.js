@@ -40,7 +40,7 @@ async function rot() {
   document.body.style.setProperty("--schrift-color", " rgba(255, 255, 255");
     }
 async function gelb() {
-  document.body.style.backgroundImage = "url(https://images.alphacoders.com/294/thumb-1920-294151.gif)";
+  document.body.style.backgroundImage = "url(https://c.wallhere.com/photos/5e/7c/The_Journey_video_games-1152583.jpg!d)";
   document.body.style.setProperty("--dark-green-color", " rgb(52, 60, 69, 0.8");
   document.body.style.setProperty("--dark-green-transparent-color", " rgba(119, 127, 146, 0.7");
   document.body.style.setProperty("--dark-green-transparent-color-hover", " rgb(119, 127, 146");
@@ -51,11 +51,11 @@ async function gelb() {
   document.body.style.setProperty("--nav-selected-color", " rgba(117, 121, 147");
   document.body.style.setProperty("--fächer-green-color", " rgb(93, 96, 119, 0.7");
   document.body.style.setProperty("--fächer-dark-green-color", " rgba(68, 76, 94");
-  document.body.style.setProperty("--schrift-color", " rgba(255, 255, 255");
+  document.body.style.setProperty("--schrift-color", " rgba(0, 0, 0");
     }
 
 async function braun() {
-  document.body.style.backgroundImage = "url(https://i.pinimg.com/originals/35/0b/f3/350bf3ecb77455ac53a9651f2425bc09.jpg)";
+  document.body.style.backgroundImage = "url(https://gamespot1.cbsistatic.com/uploads/screen_kubrick/416/4161502/2309269-tribute_to_journey_by_matou31-d5um8hb.jpg)";
   document.body.style.setProperty("--dark-green-color", " rgb(55, 74, 69, 0.8");
   document.body.style.setProperty("--dark-green-transparent-color", " rgba(121, 148, 141, 0.7");
   document.body.style.setProperty("--dark-green-transparent-color-hover", " rgb(121, 148, 141");
