@@ -77,7 +77,6 @@
 #tageBisFällig {
   display: inline;
   padding: 10pt;
-  /* font-style: italic; */
   font-size: 13pt;
 }
 
@@ -146,7 +145,7 @@
 }
 
 #addAufgabe {
-  margin-left: -370pt;
+  margin-left: -350pt;
   margin-top: 0pt;
 }
 
