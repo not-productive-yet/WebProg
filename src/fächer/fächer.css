@@ -4,23 +4,6 @@
   color: white;
   text-align: left;
 }
-/* webkit geht nur in chrome */
-/*  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: white;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--dark-green-color);
-}
-.fächer #fächerNav {
-  background-color: var(--nav-selected-color);
-  cursor: pointer;
-  color: var(--schrift-color);
-}
-*/
 #fächerEntries {
     display: inline-grid;
     grid-template-columns: 450px 450px;
