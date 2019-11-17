@@ -22,10 +22,10 @@
   grid-template-columns: 450px 450px 450px;
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 700px;
+  height: 800px;
   position: relative;
   width: 1400px;
-  margin-top: 10pt;
+  margin-top: -10pt;
 }
 
 .kastenAußen {
