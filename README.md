@@ -10,6 +10,7 @@ Es wird empfehlen "Chrome" als Browser zu verwenden, da ein webkit eingebaut wur
 Starten Sie die App über die Console mit dem Command: npm start
 
 Die Browser-App besitzt drei unterschiedliche Themen-Seiten.
+
     - Aufgaben-Seite: Auf dieser Seite werden alle noch zu bearbeiteten Aufgaben dargestellt. Des Weiteren kann über diese Seite eine Aufgabe aktualisiert(direkt bearbeiten und speichern), als erledigt gekennzeichnet(durchstreichen) und gelöscht werden.
     - Wenn eine neue Aufgabe erstellt werden möchte, gelangt man über den Button "NEUE AUFGABE" auf eine neue Seite.
 
